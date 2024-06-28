@@ -57,7 +57,7 @@ export default function Home() {
           </p>
           <br />
           <Image
-            className="mx-auto shadow rounded"
+            className="mx-auto shadow rounded m-5"
             width={500}
             height={500}
             src="/trainingpeaks.png"

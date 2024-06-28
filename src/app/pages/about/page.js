@@ -28,7 +28,7 @@ const page = () => {
           </p>
 
           <Image
-            className="rounded shadow mx-auto m-5"
+            className="rounded shadow mx-auto m-10"
             width={400}
             height={400}
             src="/theBrutal.png"
@@ -43,16 +43,16 @@ const page = () => {
             Trainer
           </p>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center my-10">
             <Image
-              className="rounded shadow mx-auto m-5"
+              className="rounded  mx-auto"
               width={150}
               height={1}
               src="/dtu.png"
               alt="dtu"
             />
             <Image
-              className="rounded shadow mx-auto m-5"
+              className="rounded  mx-auto"
               width={200}
               height={1}
               src="/trainingpeaks_logo.png"
@@ -80,7 +80,7 @@ const page = () => {
           </p>
 
           <Image
-            className="rounded shadow mx-auto m-5"
+            className="rounded shadow mx-auto m-10"
             width={300}
             height={300}
             src="/deca.png"
@@ -98,7 +98,7 @@ const page = () => {
 
           <div className="flex gap-2 flex-wrap">
             <Image
-              className="rounded mx-auto m-5"
+              className="rounded mx-auto m-10"
               width={500}
               height={0}
               src="/decaStats.png"

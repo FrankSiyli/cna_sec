@@ -37,7 +37,7 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
                 <Link
                   href={menuItem.link}
                   key={menuItemIndex}
-                  className="flex justify-between items-center my-1 border-b border-t text-appBlue cursor-pointer hover:scale-y-105 shadow transform transition-transform duration-100"
+                  className="flex justify-between items-center my-1  text-appBlue cursor-pointer hover:scale-y-105 shadow transform transition-transform duration-100"
                 >
                   <p className="m-2 text-xl">{menuItem.title}</p>
                   <span className="scale-75">
