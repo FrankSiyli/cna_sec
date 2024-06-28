@@ -6,7 +6,7 @@ import Header from "@/app/components/Header/Header";
 
 const page = () => {
   return (
-    <>
+    <div className="flex min-h-screen w-full flex-col items-center justify-center p-2">
     <Header/>
       <Link href="/">
         <ArrowLeftSvg />
@@ -33,7 +33,7 @@ const page = () => {
             Verbraucherschlichtungsstelle weder verpflichtet noch bereit.
           </p>
       </div>
-    </>
+    </div>
   );
 };
 

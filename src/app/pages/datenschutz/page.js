@@ -6,7 +6,7 @@ import Header from "@/app/components/Header/Header";
 
 const page = () => {
   return (
-    <>
+    <div className="flex min-h-screen w-full flex-col items-center justify-center p-2">
     <Header/>
       <Link href="/">
         <ArrowLeftSvg />
@@ -40,7 +40,7 @@ const page = () => {
           Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige
           Behörde. Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen
           Bereich) mit Anschrift finden Sie unter:{" "}
-          <Link href="https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html">
+          <Link className="text-xs" href="https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html">
             https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html.
           </Link>
           <p>Kontaktformular</p>
@@ -96,7 +96,7 @@ const page = () => {
             Experten für externe Datenschutzbeauftragte (Version #2020-09-30).
           </p>
       </div>
-    </>
+    </div>
   );
 };
 
