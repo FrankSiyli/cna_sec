@@ -96,7 +96,7 @@ const page = () => {
             <span className="mx-1 text-appBlue">422km</span>Run
           </p>
 
-          <div className="flex m-10 gap-2 flex-wrap">
+          <div className="grid grid-cols-1 md:grid-cols-3 m-10 gap-2">
             <Image
               className="rounded"
               width={296}
