@@ -8,12 +8,12 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-2">
+    <main className="flex flex-col items-center justify-between p-2">
       <CookieConsent />
       <Header />
 
-      <div className="mt-28 mb-20 text-center">
-        <div className="shadow p-10 bg-appGrey/50 rounded mb-10">
+      <div className="mt-40 mb-20 text-center">
+        <div className="shadow px-40 py-20 bg-appGrey/50 rounded mb-10">
           <h2 className="text-xl">
             <span className="text-appBlue ml-1">Trainingsplan</span>
             erstellung
@@ -57,7 +57,7 @@ export default function Home() {
           </p>
           <br />
           <Image
-            className="mx-auto shadow rounded m-5"
+            className="mx-auto min-w-96 shadow rounded m-5"
             width={500}
             height={500}
             src="/trainingpeaks.png"
@@ -79,7 +79,7 @@ export default function Home() {
           <br />
         </div>
 
-        <div className="shadow p-10 bg-appGrey/50 rounded mb-10">
+        <div className="shadow px-40 py-20 bg-appGrey/50 rounded mb-10">
           <div>
             <h2 className="text-xl">
               <span className="text-appBlue ml-1">Statische </span>
@@ -91,7 +91,7 @@ export default function Home() {
               vorbei{" "}
             </p>
 
-            <button className="border border-appDark p-1.5 shadow m-5 rounded ">
+            <button className="border border-appBlue p-1.5 shadow m-5 rounded hover:scale-105 hover:shadow-xl transform transition-transform duration-100 ">
               <Link className="underline text-appBlue" target="_blank" href="https://siyli-app.vercel.app">
                 siyli-app.de
               </Link>
@@ -105,7 +105,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="shadow p-10 bg-appGrey/50 rounded">
+        <div className="shadow px-40 py-20 bg-appGrey/50 rounded">
           <p>All training sessions are in german and english</p>
           <Image
             className="mx-auto shadow rounded m-5"

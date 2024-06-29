@@ -3,15 +3,16 @@ import React from "react";
 import ArrowLeftSvg from "../../components/buttons/svgCollection/ArrowLeftSvg";
 import Link from "next/link";
 import Header from "@/app/components/Header/Header";
+import Footer from "@/app/components/Footer/Footer";
 
 const page = () => {
   return (
-    <div className="flex min-h-screen w-full flex-col items-center justify-center p-2">
+    <div className="flex min-h-screen w-full flex-col items-center justify-center">
     <Header/>
       <Link href="/">
         <ArrowLeftSvg />
       </Link>
-      <div className="mt-48 py-20 px-2 flex flex-col justify-center border m-5 bg-appGrey/50 rounded-sm  text-appBlue">
+      <div className="my-48 p-20 flex flex-col justify-center border m-5 bg-appGrey/50 rounded-sm  text-appBlue">
         <h2 className="mb-20 text-2xl">Impressum</h2>
 
         <h2>Angaben gemäß § 5 TMG:</h2>
@@ -33,6 +34,7 @@ const page = () => {
             Verbraucherschlichtungsstelle weder verpflichtet noch bereit.
           </p>
       </div>
+      <Footer/>
     </div>
   );
 };

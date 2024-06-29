@@ -1,7 +1,6 @@
 import ArrowRightSvg from "@/app/components/buttons/svgCollection/ArrowRightSvg";
 import React, { forwardRef, useEffect, useState } from "react";
 import menuItemsArray from "./menuItemsArray/menuItemsArray";
-import ClosingAtom from "../buttons/ButtonClosing";
 import Link from "next/link";
 
 const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
@@ -12,14 +11,14 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
     <div
       className={`${
         showMenu
-          ? "fixed top-0 right-0 w-full h-full shadow-2xl z-20 bg-neutral-800/30"
+          ? "fixed top-0 right-0 w-full h-full shadow-2xl z-20 bg-neutral-800/40"
           : ""
       }`}
     >
       {loaded ? (
         <div
           ref={ref}
-          className={`fixed top-1 right-1 bottom-1 w-64 p-5 bg-appGrey border-2 border-appBlue/50 rounded flex flex-col justify-center z-20 transform transition-transform ${
+          className={`fixed top-10 right-1 bottom-10 w-48 p-5 bg-appGrey border-l-2 border-b-2 border-t-2 border-appBlue/50 rounded shadow-2xl flex flex-col justify-center z-20 transform transition-transform ${
             showMenu ? "" : "translate-x-80"
           }  bg-appGrey duration-100`}
         >
@@ -27,7 +26,6 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
             onClick={handleMenuClick}
             className="absolute top-5 right-8 cursor-pointer"
           >
-            <ClosingAtom />
           </span>
 
           <div className="fixed left-0 w-full">
@@ -39,20 +37,40 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
                   key={menuItemIndex}
                   className="flex justify-between items-center my-1  text-appBlue cursor-pointer hover:scale-y-105 shadow transform transition-transform duration-100"
                 >
-                  <p className="m-2 text-xl">{menuItem.title}</p>
+                  <p className="m-2 text-xl text-appDark">{menuItem.title}</p>
                   <span className="scale-75">
                     <ArrowRightSvg />
                   </span>
                 </Link>
               ))}
+                  
             </span>
           </div>
-          <div className="fixed left-0 bottom-0 w-full p-2 text-appBlue">
-          <h2 className="text-xl">Kontakt:</h2>
-            <a className="text-center underline" href="mailto:info@siyli-endurance-coaching.com">
-            info@siyli-endurance-coaching.com
-            </a>
-            </div>
+          
+          <div className="absolute -top-3 left-2 w-10 h-10 z-50">
+          {/** rear wheel */}
+          <div className="absolute bottom-0 left-0 w-3 h-3 rounded-full border-2 border-appBlue/50">
+            <span className="absolute left-1 top-0 h-2 w-0 border border-appBlue/50 animate-spin"></span>
+            <span className="absolute left-0 top-1 h-0 w-2 border border-appBlue/50 animate-spin"></span>
+            {/** frame */}
+            <span className="absolute left-1 top-0 h-0 w-3 border border-appBlue/50 -rotate-45 "></span>
+            <span className="absolute left-1 top-1 h-0 w-3.5 border border-appBlue/50 "></span>
+            <span className="absolute left-2 bottom-2 h-0 w-3.5 border border-appBlue/50 rotate-90"></span>
+            <span className="absolute left-4 -top-1 h-0 w-3 border border-appBlue/50"></span>
+            <span className="absolute left-4 top-0 h-0 w-3 border border-appBlue/50 -rotate-45"></span>
+            <span className="absolute left-3 -top-2 h-0 w-2 border border-appBlue/50"></span>
+            <span className="absolute left-6 -top-1.5 h-0 w-1 border border-appBlue/50 rotate-90"></span>
+            <span className="absolute left-6 -top-2 h-0 w-2 border border-appBlue/50"></span>
+          </div>
+          {/** front wheel */}
+          <div className="absolute bottom-0 right-0 w-3 h-3 rounded-full border-2 border-appBlue/50">
+            <span className="absolute left-1 top-0 h-2 w-0 border border-appBlue/50 animate-spin"></span>
+            <span className="absolute left-0 top-1 h-0 w-2 border border-appBlue/50 animate-spin"></span>
+            <span className="absolute right-0 top-0 h-0 w-3 border border-appBlue/50 rotate-45 "></span>
+          </div>
+        </div>
+
+
         </div>
       ) : null}
     </div>

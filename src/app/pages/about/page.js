@@ -8,13 +8,13 @@ import Image from "next/image";
 
 const page = () => {
   return (
-    <div className="flex min-h-screen w-full flex-col items-center justify-center p-2">
+    <div className="flex flex-col items-center justify-between p-2">
       <Header />
       <Link href="/">
         <ArrowLeftSvg />
       </Link>
       <div className="mt-40 mb-20 text-center">
-        <div className="shadow p-10 bg-appGrey/50 rounded mb-10">
+        <div className="shadow px-40 py-20 bg-appGrey/50 rounded mb-10">
           <h2>
             <span className="text-xl text-appBlue">Moin</span>
           </h2>
@@ -43,9 +43,9 @@ const page = () => {
             Trainer
           </p>
 
-          <div className="flex justify-center my-10">
+          <div className="">
             <Image
-              className="rounded  mx-auto"
+              className="rounded m-5 mx-auto"
               width={150}
               height={1}
               src="/dtu.png"
@@ -61,7 +61,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="shadow p-10 bg-appGrey/50 rounded mb-10">
+        <div className="shadow px-40 py-20 bg-appGrey/50 rounded mb-10">
           <p>
             Als Athlet fühle ich mich auf den
             <span className="text-appBlue ml-1">Ultradistanzen </span> zu Hause
@@ -96,12 +96,26 @@ const page = () => {
             <span className="mx-1 text-appBlue">422km</span>Run
           </p>
 
-          <div className="flex gap-2 flex-wrap">
+          <div className="flex m-10 gap-2 flex-wrap">
             <Image
-              className="rounded mx-auto m-10"
-              width={500}
+              className="rounded"
+              width={300}
               height={0}
-              src="/decaStats.png"
+              src="/decaBike.png"
+              alt="deca uk"
+            />
+            <Image
+              className="rounded"
+              width={300}
+              height={0}
+              src="/decaSwim.png"
+              alt="deca uk"
+            />
+            <Image
+              className="rounded"
+              width={300}
+              height={0}
+              src="/decaRun.png"
               alt="deca uk"
             />
            
