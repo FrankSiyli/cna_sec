@@ -18,7 +18,7 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
       {loaded ? (
         <div
           ref={ref}
-          className={`fixed top-10 right-1 bottom-10 w-48 p-5 bg-appGrey border-l-1 border-b-1 border-t-1 border-appBlue/50 rounded shadow-2xl flex flex-col justify-center z-20 transform transition-transform ${
+          className={`fixed top-0 right-1 bottom-0 w-48 p-5 bg-appGrey border-l-1 border-b-1 border-t-1 border-appBlue/50 rounded shadow-2xl flex flex-col justify-center z-20 transform transition-transform ${
             showMenu ? "" : "translate-x-80"
           }  duration-100`}
         >
@@ -35,7 +35,7 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
                 <Link
                   href={menuItem.link}
                   key={menuItemIndex}
-                  className="flex justify-between items-center my-1  text-appBlue cursor-pointer hover:shadow transform transition-transform duration-1000"
+                  className="flex justify-between items-center my-1  text-appGrey bg-appBlue/70 cursor-pointer shadow-xl rounded-l ml-1 hover:scale-y-105 transform transition-transform duration-100"
                 >
                   <p className="m-2 text-xl">{menuItem.title}</p>
                   <span className="scale-75">
@@ -47,7 +47,7 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
             </span>
           </div>
           
-          <div className="absolute -top-3 left-2 w-10 h-10 z-50">
+          <div className="absolute bottom-3 left-2 w-10 h-10 z-50">
           {/** rear wheel */}
           <div className="absolute bottom-0 left-0 w-3 h-3 rounded-full border-2 border-appBlue/50">
             <span className="absolute left-1 top-0 h-2 w-0 border border-appBlue/50 animate-spin"></span>

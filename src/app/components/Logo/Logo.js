@@ -14,7 +14,7 @@ const Logo = () => {
   return (
     <Link href="/">
     <Image
-      className="w-auto h-24 fixed left-0 top-0"
+      className="w-auto h-16 md:h-20 fixed left-2 top-4 md:top-2"
       src="/logo.png"
       alt="logo"
       quality={100}

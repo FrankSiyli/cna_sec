@@ -114,7 +114,7 @@ export default function Home() {
             src="/union.png"
             alt="english"
           />
-          <p>if you have any questions let me know</p>
+          <p>if you have any questions just let me know</p>
         </div>
       </div>
       <Footer />
