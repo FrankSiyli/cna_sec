@@ -99,22 +99,22 @@ const page = () => {
           <div className="flex m-10 gap-2 flex-wrap">
             <Image
               className="rounded"
-              width={300}
-              height={0}
+              width={296}
+              height={425}
+              src="/decaSwim.png"
+              alt="deca uk"
+            />
+            <Image
+              className="rounded "
+              width={296}
+              height={425}
               src="/decaBike.png"
               alt="deca uk"
             />
             <Image
               className="rounded"
-              width={300}
-              height={0}
-              src="/decaSwim.png"
-              alt="deca uk"
-            />
-            <Image
-              className="rounded"
-              width={300}
-              height={0}
+              width={296}
+              height={425}
               src="/decaRun.png"
               alt="deca uk"
             />
