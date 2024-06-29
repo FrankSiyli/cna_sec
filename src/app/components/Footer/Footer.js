@@ -11,7 +11,6 @@ const Footer = () => {
     <div className="flex justify-center gap-5 text-appBlue underline">
       <Link href="../pages/impressum">Impressum</Link>
       <Link href="../pages/datenschutz">Datenschutz</Link>
-      <Link href="mailto:info@siyli-endurance-coaching.com">Email</Link>
     </div>
     </div>
   );
