@@ -14,7 +14,7 @@ const page = () => {
         <ArrowLeftSvg />
       </Link>
       <div className="mt-40 mb-20 text-center">
-        <div className="shadow px-40 py-20 bg-appGrey/50 rounded mb-10">
+      <div className="px-80 py-20 backdrop-blur-md backdropSafari rounded-xl mb-10">
           <h2>
             <span className="text-xl text-appBlue">Moin</span>
           </h2>
@@ -61,7 +61,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="shadow px-40 py-20 bg-appGrey/50 rounded mb-10">
+        <div className="px-80 py-20 backdrop-blur-md backdropSafari rounded-xl mb-10">
           <p>
             Als Athlet fühle ich mich auf den
             <span className="text-appBlue ml-1">Ultradistanzen </span> zu Hause

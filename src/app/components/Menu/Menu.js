@@ -11,7 +11,7 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
     <div
       className={`${
         showMenu
-          ? "fixed top-0 right-0 w-full h-full shadow-2xl z-20 bg-neutral-800/40"
+          ? "fixed top-0 right-0 w-full h-full shadow-2xl z-20 bg-neutral-800/70"
           : ""
       }`}
     >
@@ -20,7 +20,7 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
           ref={ref}
           className={`fixed top-10 right-1 bottom-10 w-48 p-5 bg-appGrey border-l-1 border-b-1 border-t-1 border-appBlue/50 rounded shadow-2xl flex flex-col justify-center z-20 transform transition-transform ${
             showMenu ? "" : "translate-x-80"
-          }  bg-appGrey duration-100`}
+          }  duration-100`}
         >
           <span
             onClick={handleMenuClick}

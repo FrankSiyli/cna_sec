@@ -16,6 +16,10 @@
     display: none;
   }
 }
+.backdropSafari {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: 20px;
+}
 
 
 body {

@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState, forwardRef } from "react";
 import Menu from "../Menu/Menu";
 import Logo from "../Logo/Logo";
 import ButtonHamburgerMenu from "../buttons/ButtonHamburgerMenu";
-import Footer from "../Footer/Footer";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -34,10 +33,10 @@ const Header = () => {
         <Logo />
         <div className="text-sm md:text-base">
         <h1 className="">
-          <span className="text-appBlue">LIFE</span> is good.
+          <span className="text-appBlue">LIFE</span> is good
         </h1>
         <h1 className="">
-          <span className="text-appBlue">TRIATHLON</span> makes it better.
+          <span className="text-appBlue">TRIATHLON</span> makes it better
         </h1>
         </div>
 

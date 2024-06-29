@@ -4,10 +4,10 @@ const ButtonHamburgerMenu = ({ handleClick, secondProp }) => {
   return (
     <span
       onClick={handleClick}
-      className="fixed right-2 rounded p-3 hover:-rotate-12 cursor-pointer transform transition-transform duration-300"
+      className="fixed right-2 rounded shadow-xl p-2 border border-appBlue hover:-rotate-12 cursor-pointer transform transition-transform duration-300"
     >
       <div
-        className={`w-8 border border-appDark transform transition-all duration-1000 ${
+        className={`w-8 border border-appBlue transform transition-all duration-1000 ${
           secondProp ? "rotate-45 translate-y-2.5 opacity-0" : ""
         }`}
       ></div>
@@ -19,7 +19,7 @@ const ButtonHamburgerMenu = ({ handleClick, secondProp }) => {
       ></div>
 
       <div
-        className={`w-8 border border-appDark transform transition-all duration-1000 ${
+        className={`w-8 border border-appBlue transform transition-all duration-1000 ${
           secondProp ? "-rotate-45 -translate-y-2.5 opacity-0" : ""
         }`}
       ></div>

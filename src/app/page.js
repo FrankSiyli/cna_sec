@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
 
       <div className="mt-40 mb-20 text-center">
-        <div className="shadow px-40 py-20 bg-appGrey/50 rounded mb-10">
+        <div className="px-80 py-20 backdrop-blur-md backdropSafari rounded-xl mb-10">
           <h2 className="text-xl">
             <span className="text-appBlue ml-1">Trainingsplan</span>
             erstellung
@@ -23,7 +23,7 @@ export default function Home() {
             wöchentlicher Trainingsplan auf der professionellen Plattform von
             &nbsp;
             <Link
-              className="target-link"
+              className="underline text-appBlue"
               target="_blank"
               href="https://www.trainingpeaks.com"
             >
@@ -79,7 +79,7 @@ export default function Home() {
           <br />
         </div>
 
-        <div className="shadow px-40 py-20 bg-appGrey/50 rounded mb-10">
+        <div className="px-80 py-20 backdrop-blur-md backdropSafari rounded-xl mb-10">
           <div>
             <h2 className="text-xl">
               <span className="text-appBlue ml-1">Statische </span>
@@ -91,7 +91,7 @@ export default function Home() {
               vorbei{" "}
             </p>
 
-            <button className="border border-appBlue p-1.5 shadow m-5 rounded hover:scale-105 hover:shadow-xl transform transition-transform duration-100 ">
+            <button className="border border-appBlue p-1.5 shadow-xl m-5 rounded hover:scale-105 transform transition-transform duration-100 ">
               <Link className="underline text-appBlue" target="_blank" href="https://siyli-app.vercel.app">
                 siyli-app.de
               </Link>
@@ -105,7 +105,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="shadow px-40 py-20 bg-appGrey/50 rounded">
+        <div className="px-80 py-20 backdrop-blur-md backdropSafari rounded-xl mb-10">
           <p>All training sessions are in german and english</p>
           <Image
             className="mx-auto shadow rounded m-5"

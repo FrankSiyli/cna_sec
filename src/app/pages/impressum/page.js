@@ -12,7 +12,7 @@ const page = () => {
       <Link href="/">
         <ArrowLeftSvg />
       </Link>
-      <div className="mt-48 p-20 flex flex-col justify-center border m-5 bg-appGrey/50 rounded-sm  text-appBlue">
+      <div className="mt-48 px-80 py-20 backdrop-blur-md backdropSafari rounded-xl mb-10">
          <h2 className="mb-20 text-2xl">Impressum</h2>
 
         <h2>Angaben gemäß § 5 TMG:</h2>
