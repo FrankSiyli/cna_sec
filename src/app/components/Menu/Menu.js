@@ -18,7 +18,7 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
       {loaded ? (
         <div
           ref={ref}
-          className={`fixed top-10 right-1 bottom-10 w-48 p-5 bg-appGrey border-l-2 border-b-2 border-t-2 border-appBlue/50 rounded shadow-2xl flex flex-col justify-center z-20 transform transition-transform ${
+          className={`fixed top-10 right-1 bottom-10 w-48 p-5 bg-appGrey border-l-1 border-b-1 border-t-1 border-appBlue/50 rounded shadow-2xl flex flex-col justify-center z-20 transform transition-transform ${
             showMenu ? "" : "translate-x-80"
           }  bg-appGrey duration-100`}
         >
@@ -35,9 +35,9 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
                 <Link
                   href={menuItem.link}
                   key={menuItemIndex}
-                  className="flex justify-between items-center my-1  text-appBlue cursor-pointer hover:scale-y-105 shadow transform transition-transform duration-100"
+                  className="flex justify-between items-center my-1  text-appBlue cursor-pointer hover:shadow transform transition-transform duration-1000"
                 >
-                  <p className="m-2 text-xl text-appDark">{menuItem.title}</p>
+                  <p className="m-2 text-xl">{menuItem.title}</p>
                   <span className="scale-75">
                     <ArrowRightSvg />
                   </span>
