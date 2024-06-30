@@ -18,59 +18,53 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
       {loaded ? (
         <div
           ref={ref}
-          className={`fixed top-0 right-1 bottom-0 w-48 p-5 bg-appGrey border-l-1 border-b-1 border-t-1 border-appBlue/50 rounded shadow-2xl flex flex-col justify-center z-20 transform transition-transform ${
+          className={`fixed top-0 right-1 bottom-0 w-48 p-5 bg-appGrey/90 border-l-1 border-b-1 border-t-1 border-appBlue rounded shadow-2xl flex flex-col justify-center z-20 transform transition-transform ${
             showMenu ? "" : "translate-x-80"
           }  duration-100`}
         >
           <span
             onClick={handleMenuClick}
             className="absolute top-5 right-8 cursor-pointer"
-          >
-          </span>
+          ></span>
 
           <div className="fixed left-0 w-full">
-            
             <span className="flex flex-col w-full">
               {menuItemsArray.map((menuItem, menuItemIndex) => (
                 <Link
                   href={menuItem.link}
                   key={menuItemIndex}
-                  className="flex justify-between items-center my-1  text-appGrey bg-appBlue/70 cursor-pointer shadow-xl rounded-l ml-1 hover:scale-y-105 transform transition-transform duration-100"
+                  className="flex justify-between items-center rounded m-1  text-appBlue border border-appBlue/50 cursor-pointer shadow-xl"
                 >
                   <p className="m-2 text-xl">{menuItem.title}</p>
-                  <span className="scale-75">
-                    <ArrowRightSvg />
-                  </span>
+
+                  <ArrowRightSvg />
                 </Link>
               ))}
-                  
             </span>
           </div>
-          
+
           <div className="absolute bottom-3 left-2 w-10 h-10 z-50">
-          {/** rear wheel */}
-          <div className="absolute bottom-0 left-0 w-3 h-3 rounded-full border-2 border-appBlue/50">
-            <span className="absolute left-1 top-0 h-2 w-0 border border-appBlue/50 animate-spin"></span>
-            <span className="absolute left-0 top-1 h-0 w-2 border border-appBlue/50 animate-spin"></span>
-            {/** frame */}
-            <span className="absolute left-1 top-0 h-0 w-3 border border-appBlue/50 -rotate-45 "></span>
-            <span className="absolute left-1 top-1 h-0 w-3.5 border border-appBlue/50 "></span>
-            <span className="absolute left-2 bottom-2 h-0 w-3.5 border border-appBlue/50 rotate-90"></span>
-            <span className="absolute left-4 -top-1 h-0 w-3 border border-appBlue/50"></span>
-            <span className="absolute left-4 top-0 h-0 w-3 border border-appBlue/50 -rotate-45"></span>
-            <span className="absolute left-3 -top-2 h-0 w-2 border border-appBlue/50"></span>
-            <span className="absolute left-6 -top-1.5 h-0 w-1 border border-appBlue/50 rotate-90"></span>
-            <span className="absolute left-6 -top-2 h-0 w-2 border border-appBlue/50"></span>
+            {/** rear wheel */}
+            <div className="absolute bottom-0 left-0 w-3 h-3 rounded-full border-2 border-appBlue">
+              <span className="absolute left-1 top-0 h-2 w-0 border border-appBlue animate-spin"></span>
+              <span className="absolute left-0 top-1 h-0 w-2 border border-appBlue animate-spin"></span>
+              {/** frame */}
+              <span className="absolute left-1 top-0 h-0 w-3 border border-appBlue -rotate-45 "></span>
+              <span className="absolute left-1 top-1 h-0 w-3.5 border border-appBlue "></span>
+              <span className="absolute left-2 bottom-2 h-0 w-3.5 border border-appBlue rotate-90"></span>
+              <span className="absolute left-4 -top-1 h-0 w-3 border border-appBlue"></span>
+              <span className="absolute left-4 top-0 h-0 w-3 border border-appBlue -rotate-45"></span>
+              <span className="absolute left-3 -top-2 h-0 w-2 border border-appBlue"></span>
+              <span className="absolute left-6 -top-1.5 h-0 w-1 border border-appBlue rotate-90"></span>
+              <span className="absolute left-6 -top-2 h-0 w-2 border border-appBlue"></span>
+            </div>
+            {/** front wheel */}
+            <div className="absolute bottom-0 right-0 w-3 h-3 rounded-full border-2 border-appBlue">
+              <span className="absolute left-1 top-0 h-2 w-0 border border-appBlue animate-spin"></span>
+              <span className="absolute left-0 top-1 h-0 w-2 border border-appBlue animate-spin"></span>
+              <span className="absolute right-0 top-0 h-0 w-3 border border-appBlue rotate-45 "></span>
+            </div>
           </div>
-          {/** front wheel */}
-          <div className="absolute bottom-0 right-0 w-3 h-3 rounded-full border-2 border-appBlue/50">
-            <span className="absolute left-1 top-0 h-2 w-0 border border-appBlue/50 animate-spin"></span>
-            <span className="absolute left-0 top-1 h-0 w-2 border border-appBlue/50 animate-spin"></span>
-            <span className="absolute right-0 top-0 h-0 w-3 border border-appBlue/50 rotate-45 "></span>
-          </div>
-        </div>
-
-
         </div>
       ) : null}
     </div>

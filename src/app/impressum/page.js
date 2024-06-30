@@ -1,13 +1,12 @@
 "use client";
 import React from "react";
-import ArrowLeftSvg from "../../components/buttons/svgCollection/ArrowLeftSvg";
+import ArrowLeftSvg from "../components/buttons/svgCollection/ArrowLeftSvg";
 import Link from "next/link";
 import Header from "@/app/components/Header/Header";
-import Footer from "@/app/components/Footer/Footer";
 
-const page = () => {
+const Page = () => {
   return (
-    <div className="flex min-h-screen w-full flex-col items-center justify-between">
+    <div className="flex min-h-screen w-full flex-col items-center">
     <Header/>
       <Link href="/">
         <ArrowLeftSvg />
@@ -34,9 +33,8 @@ const page = () => {
             Verbraucherschlichtungsstelle weder verpflichtet noch bereit.
           </p>
       </div>
-      <Footer/>
     </div>
   );
 };
 
-export default page;
+export default Page;

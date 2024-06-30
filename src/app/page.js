@@ -2,10 +2,8 @@
 
 import Link from "next/link";
 import CookieConsent from "./CookieConsent";
-import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Image from "next/image";
-import HashtagSvg from "./components/buttons/svgCollection/HashtagSvg";
 
 export default function Home() {
   return (
@@ -129,7 +127,6 @@ export default function Home() {
           <p>if you have any questions just let me know</p>
         </div>
       </div>
-      <Footer />
     </main>
   );
 }

@@ -1,12 +1,11 @@
 "use client";
 import React from "react";
-import ArrowLeftSvg from "../../components/buttons/svgCollection/ArrowLeftSvg";
+import ArrowLeftSvg from "../components/buttons/svgCollection/ArrowLeftSvg";
 import Link from "next/link";
-import Footer from "@/app/components/Footer/Footer";
 import Header from "@/app/components/Header/Header";
 import Image from "next/image";
 
-const page = () => {
+const Page = () => {
   return (
     <div className="flex flex-col items-center justify-between p-2">
       <Header />
@@ -122,9 +121,8 @@ const page = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
 
-export default page;
+export default Page;

@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import RecoilRootWrapper from "./RecoilRootWrapper";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Footer from "./components/Footer/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.variable} font-sans bg-[url('/background.png')] bg-contain bg-fixed`}>
         {" "}
         <RecoilRootWrapper>{children}</RecoilRootWrapper>
+        <Footer/>
       </body>
       <GoogleAnalytics gaId="G-5RYG7LTMTJ" />
     </html>

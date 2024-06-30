@@ -1,7 +1,7 @@
 const menuItemsArray = [
   {
     title: "About",
-    link: "pages/about"
+    link: "about"
   },
  
   

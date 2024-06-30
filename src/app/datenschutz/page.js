@@ -1,13 +1,12 @@
 "use client";
 import React from "react";
-import ArrowLeftSvg from "../../components/buttons/svgCollection/ArrowLeftSvg";
+import ArrowLeftSvg from "../components/buttons/svgCollection/ArrowLeftSvg";
 import Link from "next/link";
 import Header from "@/app/components/Header/Header";
-import Footer from "@/app/components/Footer/Footer";
 
-const page = () => {
+const Page = () => {
   return (
-    <div className="flex min-h-screen w-full flex-col items-center justify-between">
+    <div className="flex min-h-screen w-full flex-col items-center">
     <Header/>
       <Link href="/">
         <ArrowLeftSvg />
@@ -18,7 +17,7 @@ const page = () => {
             Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der
             EU-Datenschutzgrundverordnung (DSGVO), ist: Frank Siyli
           </p>
-          <p>Cookies: Google page views</p>
+          <p>Cookies: Google Datenschutz views</p>
           <p>
             pictures sources: Strava.com, butalevents.co.uk,
             www.klickchickphotography.com
@@ -97,9 +96,8 @@ const page = () => {
             Experten für externe Datenschutzbeauftragte (Version #2020-09-30).
           </p>
       </div>
-      <Footer/>
     </div>
   );
 };
 
-export default page;
+export default Page;
