@@ -122,7 +122,7 @@ export default function Home() {
         <div className="backdrop-blur-md backdropSafari rounded-xl mb-10">
           <p>All training sessions are in german and english</p>
           <Image
-            className="mx-auto shadow rounded m-5 w-auto"
+            className="mx-auto shadow rounded m-5 w-auto h-10"
             width={70}
             height={70}
             src="/union.png"
