@@ -27,7 +27,7 @@ const page = () => {
             zu verwirklichen
           </p>
 
-          <Image
+          <Image 
             className="rounded shadow mx-auto m-10 w-auto"
             width={400}
             height={400}
@@ -44,14 +44,14 @@ const page = () => {
           </p>
 
           <div className="">
-            <Image
+          <Image 
               className="rounded m-5 mx-auto w-auto"
               width={150}
               height={1}
               src="/dtu.png"
               alt="dtu"
             />
-            <Image
+          <Image 
               className="rounded  mx-auto w-auto"
               width={200}
               height={1}
@@ -79,7 +79,7 @@ const page = () => {
             </Link>
           </p>
 
-          <Image
+          <Image 
             className="rounded shadow mx-auto m-10 w-auto" 
             width={300}
             height={300}
@@ -97,21 +97,21 @@ const page = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 m-10 gap-2 mx-auto">
-            <Image
+          <Image 
               className="rounded min-w-[200px] w-auto mx-auto"
               width={296}
               height={425}
               src="/decaSwim.png"
               alt="deca uk"
             />
-            <Image
+          <Image 
               className="rounded min-w-[200px] w-auto mx-auto"
               width={296}
               height={425}
               src="/decaBike.png"
               alt="deca uk"
             />
-            <Image
+          <Image 
               className="rounded min-w-[200px] w-auto mx-auto"
               width={296}
               height={425}

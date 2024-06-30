@@ -14,70 +14,78 @@ export default function Home() {
       <Header />
 
       <div className="mt-40 mb-20 text-center">
-          <h2 className="text-xl mb-10">
-            <span className="text-appBlue ml-1 font-semibold">Trainingsplan</span>
-            erstellung
-          </h2>
+        <h2 className="text-xl mb-10">
+          <span className="text-appBlue ml-1 font-semibold">Trainingsplan</span>
+          erstellung
+        </h2>
         <div className="max-w-xl mx-5 backdrop-blur-md backdropSafari rounded-xl mb-10 flex flex-col items-center gap-3">
-          
           <div className="flex">
-             <p># wöchentlicher Trainingsplan auf der professionellen Plattform von  <Link
-              className="underline text-appBlue"
-              target="_blank"
-              href="https://www.trainingpeaks.com"
-            >
-              Trainingpeaks
-            </Link></p>
+            <p>
+              # wöchentlicher Trainingsplan auf der professionellen Plattform
+              von{" "}
+              <Link
+                className="underline text-appBlue"
+                target="_blank"
+                href="https://www.trainingpeaks.com"
+              >
+                Trainingpeaks
+              </Link>
+            </p>
             &nbsp;
-           
           </div>
           <div className="flex">
-           # angepasst an dich und
+            # angepasst an dich und
             <span className="text-appBlue ml-1">dein Leben </span>
           </div>
-            <div className="text-appBlue ml-1 flex">
-            <span className="text-appDark mr-1">#</span> unbegrenzte Kontaktmöglichkeit{" "}
-            </div>
+          <div className="text-appBlue ml-1 flex">
+            <span className="text-appDark mr-1">#</span> unbegrenzte
+            Kontaktmöglichkeit{" "}
+          </div>
           <div className="flex">
-           # auf Wunsch
+            # auf Wunsch
             <span className="text-appBlue ml-1">zyklusbasiertes Training </span>
           </div>
           <div className="flex">
-           <p># Unterstützung bei <span className="text-appBlue ml-1">
-              Zielsetzungen, Materialauswahl und Ernährung{" "}
-            </span></p>
-            
+            <p>
+              # Unterstützung bei{" "}
+              <span className="text-appBlue ml-1">
+                Zielsetzungen, Materialauswahl und Ernährung{" "}
+              </span>
+            </p>
           </div>
-          <div className="text-appBlue ml-1 flex">  <span className="text-appDark mr-1">#</span> monatlich kündbar </div>
+          <div className="text-appBlue ml-1 flex">
+            {" "}
+            <span className="text-appDark mr-1">#</span> monatlich kündbar{" "}
+          </div>
 
           <div className="flex">
-           # Schwimm-, Rad- und Laufeinheiten in abwechslungsreichen Intensitäten
-            und Umfängen{" "}
+            # Schwimm-, Rad- und Laufeinheiten in abwechslungsreichen
+            Intensitäten und Umfängen{" "}
           </div>
-          </div>
-          <div>
+        </div>
+        <div>
           <Image
             className="mx-auto min-w-96 shadow rounded m-5 w-auto"
             width={400}
             height={400}
             src="/trainingpeaks.png"
             alt="trainingpeaks"
-            priority
           />
 
           <br />
 
-
           <div className="backdrop-blur-md backdropSafari rounded-xl mb-10">
-
-          <span className=" text-red-500">ausgebucht</span>
-          <p>Triathlon-coaching </p>
-          <p>
-            <span className="text-sm text-appBlue"> inklusive Trainingpeaks Premium account </span>
-          </p>
-          <br />
+            <span className=" text-red-500">ausgebucht</span>
+            <p>Triathlon-coaching </p>
+            <p>
+              <span className="text-sm text-appBlue">
+                {" "}
+                inklusive Trainingpeaks Premium account{" "}
+              </span>
+            </p>
+            <br />
           </div>
-          
+
           <br />
         </div>
 
@@ -94,7 +102,11 @@ export default function Home() {
             </p>
 
             <button className="border border-appBlue p-1.5 shadow-xl m-5 rounded hover:scale-105 transform transition-transform duration-100 ">
-              <Link className="underline text-appBlue" target="_blank" href="https://siyli-app.vercel.app">
+              <Link
+                className="underline text-appBlue"
+                target="_blank"
+                href="https://siyli-app.vercel.app"
+              >
                 siyli-app.de
               </Link>
             </button>
