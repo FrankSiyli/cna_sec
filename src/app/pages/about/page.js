@@ -96,23 +96,23 @@ const page = () => {
             <span className="mx-1 text-appBlue">422km</span>Run
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 m-10 gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-3 m-10 gap-2 mx-auto">
             <Image
-              className="rounded mx-auto  w-auto"
+              className="rounded min-w-[200px] w-auto mx-auto"
               width={296}
               height={425}
               src="/decaSwim.png"
               alt="deca uk"
             />
             <Image
-              className="rounded mx-auto w-auto"
+              className="rounded min-w-[200px] w-auto mx-auto"
               width={296}
               height={425}
               src="/decaBike.png"
               alt="deca uk"
             />
             <Image
-              className="rounded mx-auto w-auto"
+              className="rounded min-w-[200px] w-auto mx-auto"
               width={296}
               height={425}
               src="/decaRun.png"
