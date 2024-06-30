@@ -31,9 +31,9 @@ const Header = () => {
     <>
       <div className="headerBackground fixed z-10 top-0 left-0 w-screen h-24 flex justify-center items-center text-center shadow-xl ">
         <div className="text-sm md:text-xl absolute flex flex-col justify-center items-center">
-          <span className="border border-appBlue/50 text-appBlue mb-1 font-semibold flex bg-appGrey/80 rounded py-1 px-2">LIFE <p className=" text-appDark font-light ml-1"> is good</p></span> 
+          <span className="border border-appBlue/50 text-appBlue mb-1 font-semibold flex bg-appGrey/90 rounded py-1 px-2">LIFE <p className=" text-appDark font-light ml-1"> is good</p></span> 
        
-          <span className="border border-appBlue/50 text-appBlue font-semibold flex bg-appGrey/80 rounded py-1 px-2">TRIATHLON <p className=" text-appDark font-light ml-1"> makes it better</p></span>
+          <span className="border border-appBlue/50 text-appBlue font-semibold flex bg-appGrey/90 rounded py-1 px-2">TRIATHLON <p className=" text-appDark font-light ml-1"> makes it better</p></span>
         </div>
 
         <ButtonHamburgerMenu

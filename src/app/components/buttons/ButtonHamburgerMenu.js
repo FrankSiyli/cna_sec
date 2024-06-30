@@ -4,7 +4,7 @@ const ButtonHamburgerMenu = ({ handleClick, secondProp }) => {
   return (
     <span
       onClick={handleClick}
-      className="fixed right-5 rounded shadow-xl p-2 bg-appGrey/80 border border-appBlue/50 hover:-rotate-12 cursor-pointer transform transition-transform duration-300"
+      className="fixed right-5 rounded shadow-xl p-2 bg-appGrey/90 border border-appBlue/50 hover:-rotate-12 cursor-pointer transform transition-transform duration-300"
     >
       <div
         className={`w-8 border border-appBlue transform transition-all duration-1000 ${

@@ -58,19 +58,9 @@ export default function Home() {
           <span className="text-appBlue mr-1">#</span>Schwimm-, Rad- und Laufeinheiten in abwechslungsreichen
             Intensitäten und Umfängen{" "}
           </div>
+          
         </div>
-        <div>
-          <Image
-            className="mx-auto min-w-96 shadow rounded m-5 w-auto"
-            width={400}
-            height={400}
-            src="/trainingpeaks.png"
-            alt="trainingpeaks"
-          />
-
-          <br />
-
-          <div className="backdrop-blur-md backdropSafari rounded-xl mb-10">
+        <div className="backdrop-blur-md backdropSafari rounded-xl mb-10">
             <span className=" text-red-500">ausgebucht</span>
             <p>Triathlon-coaching </p>
             <p>
@@ -81,11 +71,22 @@ export default function Home() {
             </p>
             <br />
           </div>
+        <div>
+          <Image
+            className="mx-auto min-w-96 shadow rounded m-5 w-auto"
+            width={400}
+            height={400}
+            src="/trainingpeaks.png"
+            alt="trainingpeaks"
+          />
 
-          <br />
+
+        
+
+          
         </div>
 
-        <div className="backdrop-blur-md backdropSafari rounded-xl mb-10">
+        <div className="backdrop-blur-md backdropSafari rounded-xl mt-20 mb-10">
           <div>
             <h2 className="text-xl">
               <span className="text-appBlue ml-1">Statische </span>
