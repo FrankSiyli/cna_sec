@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
 
       <div className="mt-40 mb-20 text-center">
-        <div className="px-80 py-20 backdrop-blur-md backdropSafari rounded-xl mb-10">
+        <div className="backdrop-blur-md backdropSafari rounded-xl mb-10">
           <h2 className="text-xl">
             <span className="text-appBlue ml-1">Trainingsplan</span>
             erstellung
@@ -57,7 +57,7 @@ export default function Home() {
           </p>
           <br />
           <Image
-            className="mx-auto min-w-96 shadow rounded m-5"
+            className="mx-auto min-w-96 shadow rounded m-5 w-auto"
             width={500}
             height={500}
             src="/trainingpeaks.png"
@@ -79,7 +79,7 @@ export default function Home() {
           <br />
         </div>
 
-        <div className="px-80 py-20 backdrop-blur-md backdropSafari rounded-xl mb-10">
+        <div className="backdrop-blur-md backdropSafari rounded-xl mb-10">
           <div>
             <h2 className="text-xl">
               <span className="text-appBlue ml-1">Statische </span>
@@ -97,7 +97,7 @@ export default function Home() {
               </Link>
             </button>
             <Image
-              className="mx-auto shadow rounded m-5"
+              className="mx-auto shadow rounded m-5 w-auto"
               width={300}
               height={300}
               src="/bike.png"
@@ -105,10 +105,10 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="px-80 py-20 backdrop-blur-md backdropSafari rounded-xl mb-10">
+        <div className="backdrop-blur-md backdropSafari rounded-xl mb-10">
           <p>All training sessions are in german and english</p>
           <Image
-            className="mx-auto shadow rounded m-5"
+            className="mx-auto shadow rounded m-5 w-auto"
             width={100}
             height={100}
             src="/union.png"

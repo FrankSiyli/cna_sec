@@ -17,9 +17,7 @@ const Logo = () => {
       className="w-auto h-16 md:h-20 fixed left-2 top-4 md:top-2"
       src="/logo.png"
       alt="logo"
-      quality={100}
-      priority
-      width={400}
+      width={200}
       height={200}
       onClick={handleLogoClick}
     />

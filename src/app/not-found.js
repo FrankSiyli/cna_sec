@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import logo from "../../public/logo.png";
 import Image from "next/image";
 
 const NotFound = () => {
@@ -8,10 +7,9 @@ const NotFound = () => {
     <>
       <div className="flex flex-col justify-center content-center text-center mx-auto w-screen h-screen">
         <Image
-          priority
-          src={logo}
+          src="/logo.png"
           alt="logo"
-          className="mx-auto"
+          className="mx-auto w-auto"
           width={200}
           height={200}
         />
