@@ -5,77 +5,79 @@ import CookieConsent from "./CookieConsent";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Image from "next/image";
+import HashtagSvg from "./components/buttons/svgCollection/HashtagSvg";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between p-2">
+    <main className="flex flex-col items-center justify-between p-2 ">
       <CookieConsent />
       <Header />
 
       <div className="mt-40 mb-20 text-center">
-        <div className="backdrop-blur-md backdropSafari rounded-xl mb-10">
-          <h2 className="text-xl">
-            <span className="text-appBlue ml-1">Trainingsplan</span>
+          <h2 className="text-xl mb-10">
+            <span className="text-appBlue ml-1 font-semibold">Trainingsplan</span>
             erstellung
           </h2>
-          <br />
-          <p>
-            wöchentlicher Trainingsplan auf der professionellen Plattform von
-            &nbsp;
-            <Link
+        <div className="max-w-xl mx-5 backdrop-blur-md backdropSafari rounded-xl mb-10 flex flex-col items-center gap-3">
+          
+          <div className="flex">
+             <p># wöchentlicher Trainingsplan auf der professionellen Plattform von  <Link
               className="underline text-appBlue"
               target="_blank"
               href="https://www.trainingpeaks.com"
             >
               Trainingpeaks
-            </Link>
-          </p>
-          <p>
-            angepasst an dich und
+            </Link></p>
+            &nbsp;
+           
+          </div>
+          <div className="flex">
+           # angepasst an dich und
             <span className="text-appBlue ml-1">dein Leben </span>
-          </p>
-          <p>
-            <span className="text-appBlue ml-1">
-              unbegrenzte Kontaktmöglichkeit{" "}
-            </span>
-          </p>
-          <p>
-            auf Wunsch
+          </div>
+            <div className="text-appBlue ml-1 flex">
+            <span className="text-appDark mr-1">#</span> unbegrenzte Kontaktmöglichkeit{" "}
+            </div>
+          <div className="flex">
+           # auf Wunsch
             <span className="text-appBlue ml-1">zyklusbasiertes Training </span>
-          </p>
-          <p>
-            Unterstützung bei
-            <span className="text-appBlue ml-1">
+          </div>
+          <div className="flex">
+           <p># Unterstützung bei <span className="text-appBlue ml-1">
               Zielsetzungen, Materialauswahl und Ernährung{" "}
-            </span>
-          </p>
-          <span className="text-appBlue ml-1">monatlich kündbar </span>
+            </span></p>
+            
+          </div>
+          <div className="text-appBlue ml-1 flex">  <span className="text-appDark mr-1">#</span> monatlich kündbar </div>
 
-          <p>
-            Schwimm-, Rad- und Laufeinheiten in abwechslungsreichen Intensitäten
+          <div className="flex">
+           # Schwimm-, Rad- und Laufeinheiten in abwechslungsreichen Intensitäten
             und Umfängen{" "}
-          </p>
-          <br />
+          </div>
+          </div>
+          <div>
           <Image
             className="mx-auto min-w-96 shadow rounded m-5 w-auto"
-            width={500}
-            height={500}
+            width={400}
+            height={400}
             src="/trainingpeaks.png"
             alt="trainingpeaks"
+            priority
           />
 
           <br />
-          <span className="text-sm text-red-500">Currently no free slots</span>
-          <p>für Triathlon-coaching </p>
+
+
+          <div className="backdrop-blur-md backdropSafari rounded-xl mb-10">
+
+          <span className=" text-red-500">ausgebucht</span>
+          <p>Triathlon-coaching </p>
           <p>
             <span className="text-sm text-appBlue"> inklusive Trainingpeaks Premium account </span>
           </p>
           <br />
-          <span className="text-sm text-red-500">Currently no free slots</span>
-          <p>für Einzelsport-coaching swim bike run</p>
-          <p>
-            <span className="text-sm text-appBlue"> inklusive Trainingpeaks Premium account </span>
-          </p>
+          </div>
+          
           <br />
         </div>
 
@@ -109,8 +111,8 @@ export default function Home() {
           <p>All training sessions are in german and english</p>
           <Image
             className="mx-auto shadow rounded m-5 w-auto"
-            width={100}
-            height={100}
+            width={70}
+            height={70}
             src="/union.png"
             alt="english"
           />

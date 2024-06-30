@@ -29,15 +29,11 @@ const Header = () => {
 
   return (
     <>
-      <div className="fixed z-10 top-0 left-0 w-full h-24 flex justify-center items-center text-center  bg-appGrey border-b border-black/20 shadow opacity-95">
-        <Logo />
-        <div className="text-sm md:text-base">
-        <h1 className="">
-          <span className="text-appBlue">LIFE</span> is good
-        </h1>
-        <h1 className="">
-          <span className="text-appBlue">TRIATHLON</span> makes it better
-        </h1>
+      <div className="headerBackground fixed z-10 top-0 left-0 w-screen h-24 flex justify-center items-center text-center border-b border-appGrey/80  bg-appGrey shadow-xl opacity-95">
+        <div className="text-sm md:text-xl absolute flex flex-col justify-center items-center">
+          <span className="text-appBlue font-semibold flex backdrop-blur-sm headerBackdropSafari rounded py-1 px-2">LIFE <p className="text-md text-appDark font-light ml-1"> is good</p></span> 
+       
+          <span className="text-appBlue font-semibold flex backdrop-blur-sm headerBackdropSafari rounded py-1 px-2">TRIATHLON <p className="text-md text-appDark font-light ml-1"> makes it better</p></span>
         </div>
 
         <ButtonHamburgerMenu

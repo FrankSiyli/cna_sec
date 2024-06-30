@@ -42,7 +42,7 @@ const page = () => {
           Behörde. Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen
           Bereich) mit Anschrift finden Sie unter:{" "}
           <Link className="text-xs" href="https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html">
-            https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html.
+            www.bfdi.bund.de
           </Link>
           <p>Kontaktformular</p>
           Art und Zweck der Verarbeitung: Die von Ihnen eingegebenen Daten
