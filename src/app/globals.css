@@ -51,6 +51,10 @@ html {
   background: #f1f1f1;
   background-image: url("/background.png");
   background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   white-space: pre-line;
   vertical-align: bottom;
 }
