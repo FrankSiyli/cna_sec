@@ -18,48 +18,46 @@ export default function Home() {
           <span className="text-appBlue ml-1 font-semibold">Trainingsplan</span>
           erstellung
         </h2>
-        <div className="max-w-xl mx-5 backdrop-blur-md backdropSafari rounded-xl mb-10 flex flex-col items-center gap-3">
+        <div className="max-w-xl mx-5 backdrop-blur-md backdropSafari rounded-xl mb-10 flex flex-col text-left gap-3">
           <div className="flex">
             <p>
-              # wöchentlicher Trainingsplan auf der professionellen Plattform
+            <span className="text-appBlue mr-1">#</span> wöchentlicher Trainingsplan auf der professionellen Plattform
               von{" "}
               <Link
                 className="underline text-appBlue"
                 target="_blank"
                 href="https://www.trainingpeaks.com"
               >
-                Trainingpeaks
+                  Trainingpeaks
               </Link>
             </p>
             &nbsp;
           </div>
           <div className="flex">
-            # angepasst an dich und
+          <span className="text-appBlue mr-1">#</span> angepasst an dich und
             <span className="text-appBlue ml-1">dein Leben </span>
           </div>
-          <div className="text-appBlue ml-1 flex">
-            <span className="text-appDark mr-1">#</span> unbegrenzte
+          <div className="flex">            <span className="text-appBlue mr-1">#</span>unbegrenzte
             Kontaktmöglichkeit{" "}
           </div>
           <div className="flex">
-            # auf Wunsch
+          <span className="text-appBlue mr-1">#</span> auf Wunsch
             <span className="text-appBlue ml-1">zyklusbasiertes Training </span>
           </div>
           <div className="flex">
             <p>
-              # Unterstützung bei{" "}
+            <span className="text-appBlue mr-1">#</span> Unterstützung bei{" "}
               <span className="text-appBlue ml-1">
                 Zielsetzungen, Materialauswahl und Ernährung{" "}
               </span>
             </p>
           </div>
-          <div className="text-appBlue ml-1 flex">
-            {" "}
-            <span className="text-appDark mr-1">#</span> monatlich kündbar{" "}
+          <div className="flex">            {" "}
+            <span className="text-appBlue mr-1">#</span> monatlich kündbar{" "}
           </div>
 
           <div className="flex">
-            # Schwimm-, Rad- und Laufeinheiten in abwechslungsreichen
+          <span className="text-appBlue mr-1">#</span>Schwimm-, Rad- und Laufeinheiten in abwechslungsreichen
             Intensitäten und Umfängen{" "}
           </div>
         </div>
