@@ -3,10 +3,13 @@ import React, { forwardRef, useEffect, useState } from "react";
 import menuItemsArray from "./menuItemsArray/menuItemsArray";
 import Link from "next/link";
 import Image from "next/image";
+import { useRecoilState } from "recoil";
+import { showMenuState } from "@/app/recoil/atoms/showMenuState";
 
-const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
+const Menu = forwardRef(({ handleMenuClick }, ref) => {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => setLoaded(true), []);
+  const [showMenu, setShowMenu] = useRecoilState(showMenuState);
 
   return (
     <div
@@ -30,23 +33,21 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
             src="/triathlon_2.png"
             alt="triathlon"
           />
-
           <div className="fixed left-0 w-full">
             <span className="flex flex-col w-full">
               {menuItemsArray.map((menuItem, menuItemIndex) => (
                 <Link
+                  onClick={() => setShowMenu(false)}
                   href={menuItem.link}
                   key={menuItemIndex}
-                  className="flex justify-between items-center rounded m-1  text-appBlue border border-appBlue/50 cursor-pointer shadow-xl"
+                  className="flex justify-between items-center rounded m-1 bg-appBlue  text-appGrey border border-appGrey/50 cursor-pointer shadow-xl"
                 >
-                  <p className="m-2 text-xl">{menuItem.title}</p>
-
+                  <p className="m-2 ">{menuItem.title}</p>
                   <ArrowRightSvg />
                 </Link>
               ))}
             </span>
           </div>
-
           <Image
             className="fixed bottom-0 left-0 opacity-50 w-full h-auto"
             width={400}
@@ -54,8 +55,6 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
             src="/triathlon_3.png"
             alt="triathlon"
           />
-
-        
         </div>
       ) : null}
     </div>

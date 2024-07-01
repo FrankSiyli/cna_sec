@@ -2,12 +2,10 @@
 import React from "react";
 import ArrowLeftSvg from "../components/buttons/svgCollection/ArrowLeftSvg";
 import Link from "next/link";
-import Header from "@/app/components/Header/Header";
 
 const Page = () => {
   return (
     <div className="flex min-h-screen w-full flex-col items-center">
-    <Header/>
       <Link href="/">
         <ArrowLeftSvg />
       </Link>
