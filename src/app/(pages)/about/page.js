@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import ArrowLeftSvg from "../components/buttons/svgCollection/ArrowLeftSvg";
+import ArrowLeftSvg from "../../components/buttons/svgCollection/ArrowLeftSvg";
 import Link from "next/link";
 import Image from "next/image";
 

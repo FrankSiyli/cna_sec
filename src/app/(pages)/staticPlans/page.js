@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import ArrowLeftSvg from "../components/buttons/svgCollection/ArrowLeftSvg";
+import ArrowLeftSvg from "../../components/buttons/svgCollection/ArrowLeftSvg";
 
 const Page = () => {
   return (
-    <div className="flex flex-col items-center justify-between p-2">
+    <div className="min-h-screen flex flex-col items-center justify-between p-2">
        <Link href="/">
         <ArrowLeftSvg />
       </Link>

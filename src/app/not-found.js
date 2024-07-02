@@ -16,10 +16,10 @@ const NotFound = () => {
         <h2 className="my-10">uups... </h2>
         <p>
           <Link
-            className="text-xl underline decoration-appDark underline-offset-2"
+            className="text-appBlue text-xl underline underline-offset-2"
             href="/"
           >
-            Startseite
+           Hier gehts zur Startseite
           </Link>
         </p>
       </div>
