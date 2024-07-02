@@ -15,10 +15,10 @@ const Page = () => {
             Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der
             EU-Datenschutzgrundverordnung (DSGVO), ist: Frank Siyli
           </p>
-          <p>Cookies: Google Datenschutz views</p>
+          <p>Cookies: Google analytics</p>
           <p>
             pictures sources: Strava.com, butalevents.co.uk,
-            www.klickchickphotography.com
+            www.klickchickphotography.com, pixabay.com/
           </p>
           <p>Ihre Betroffenenrechte</p>
           Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten

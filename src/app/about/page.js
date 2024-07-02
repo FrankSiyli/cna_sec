@@ -27,27 +27,27 @@ const Page = () => {
           </div>
 
           <Image
-            className="rounded shadow mx-auto m-10"
-            width={500}
-            height={1}
+           className="mx-auto shadow rounded m-10"
+           width={600}
+           height={1}
             src="/theBrutal.png"
             alt="brutal triathlon"
           />
           
             
-            <div className="flex flex-col justify-center items-center my-28 text-center bg-appGrey/30 p-3">
+            <div className="flex flex-col justify-center items-center my-10 text-center bg-appGrey/30 p-3">
               <p>Ich bin lizensierter</p>
               <Image
-              className="m-2 rounded"
-              width={150}
+              className="m-2 rounded shadow"
+              width={200}
               height={1}
               src="/dtu.png"
               alt="dtu"
             />
               <p>und</p>
               <Image
-              className="m-2 rounded"
-              width={150}
+              className="m-2 rounded shadow"
+              width={200}
               height={1}
               src="/trainingpeaks_logo.png"
               alt="trainingpeaks-logo"
@@ -79,9 +79,9 @@ const Page = () => {
           </div>
 
           <Image
-            className="rounded shadow mx-auto m-10 w-auto"
-            width={300}
-            height={300}
+           className="mx-auto shadow rounded m-10"
+           width={400}
+            height={1}
             src="/deca.png"
             alt="deca uk"
           />

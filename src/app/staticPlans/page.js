@@ -16,7 +16,7 @@ const Page = () => {
               <span className="text-appBlue ml-1">Statische </span>
               Trainingspläne
             </h2>
-            <button className="bg-appBlue  text-appGrey border border-appGrey/50 p-1.5 shadow-xl m-10 rounded hover:scale-105 transform transition-transform duration-100 ">
+            <button className="bg-appBlue  text-appGrey border border-appGrey/50 p-1.5 shadow-xl m-10 rounded hover:text-black transform transition-transform duration-500 ">
               <Link
                 className="underline"
                 target="_blank"

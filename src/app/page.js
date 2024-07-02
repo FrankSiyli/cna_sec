@@ -55,17 +55,17 @@ export default function Home() {
           <span className="text-appBlue mr-1">#</span>Schwimm-, Rad- und Laufeinheiten in abwechslungsreichen
             Intensitäten und Umfängen{" "}
           </div>
+          <div className="flex">
+          <span className="text-appBlue mr-1">#</span>
+                inklusive Trainingpeaks Premium account{" "}
+              
+            </div>
           
         </div>
         <div className="bg-appGrey/30 rounded-xl mb-10 p-3">
             <span className=" text-red-500">ausgebucht</span>
-            <p>Triathlon-coaching </p>
-            <p>
-              <span className="text-sm text-appBlue">
-                {" "}
-                inklusive Trainingpeaks Premium account{" "}
-              </span>
-            </p>
+            <p className="text-appBlue">Triathlon-coaching </p>
+           
           </div>
         <div>
           <Image

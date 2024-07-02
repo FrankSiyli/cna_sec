@@ -40,7 +40,7 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
                   onClick={() => setShowMenu(false)}
                   href={menuItem.link}
                   key={menuItemIndex}
-                  className="flex justify-between items-center rounded m-1 bg-appBlue  text-appGrey border border-appGrey/50 cursor-pointer shadow-xl"
+                  className="flex justify-between items-center rounded m-1 bg-appBlue  text-appGrey border border-appGrey/50 cursor-pointer shadow-xl hover:text-black transform transition-transform duration-300"
                 >
                   <p className="m-2 ">{menuItem.title}</p>
                   <ArrowRightSvg />
