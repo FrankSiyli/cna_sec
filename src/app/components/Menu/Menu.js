@@ -22,18 +22,18 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
       {loaded ? (
         <div
           ref={ref}
-          className={`fixed top-0 right-1 bottom-0 w-48 p-5 bg-appGrey border-l-1 border-b-1 border-t-1 border-appBlue rounded shadow-2xl flex flex-col justify-center z-20 transform transition-transform ${
+          className={`fixed top-0 right-1 bottom-0 w-48 p-5 bg-appGrey border-l-1 border-b-1 border-t-1 border-appBlue rounded shadow-2xl flex flex-col justify-center items-center z-20 transform transition-transform ${
             showMenu ? "" : "translate-x-80"
           }  duration-100`}
         >
           <Image
-            className="fixed top-0 left-0 opacity-50 w-full h-auto"
+            className="absolute top-0 left-0 opacity-50 w-full h-auto"
             width={400}
             height={400}
             src="/triathlon_2.png"
             alt="triathlon"
           />
-          <div className="fixed left-0 w-full">
+          <div className="relative w-48 z-10">
             <span className="flex flex-col w-full">
               {menuItemsArray.map((menuItem, menuItemIndex) => (
                 <Link
@@ -49,7 +49,7 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
             </span>
           </div>
           <Image
-            className="fixed bottom-0 left-0 opacity-50 w-full h-auto"
+            className="absolute bottom-0 left-0 opacity-50 w-full h-auto"
             width={400}
             height={400}
             src="/triathlon_3.png"
