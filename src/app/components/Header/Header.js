@@ -9,6 +9,7 @@ const Header = () => {
   const [showMenu, setShowMenu] = useRecoilState(showMenuState);
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [lastHideScrollY, setLastHideScrollY] = useState(0);
   const menuRef = useRef(null);
 
   useEffect(() => {
@@ -30,11 +31,14 @@ const Header = () => {
     const handleScroll = () => {
       if (typeof window !== "undefined") {
         const currentScrollY = window.scrollY;
+
         if (currentScrollY > lastScrollY && currentScrollY > 100) {
           setShowHeader(false);
-        } else {
+          setLastHideScrollY(currentScrollY); 
+        } else if (currentScrollY < lastScrollY && lastHideScrollY - currentScrollY > 100) {
           setShowHeader(true);
         }
+
         setLastScrollY(currentScrollY);
       }
     };
@@ -45,7 +49,7 @@ const Header = () => {
         window.removeEventListener("scroll", handleScroll);
       };
     }
-  }, [lastScrollY]);
+  }, [lastScrollY, lastHideScrollY]);
 
   const handleMenuClick = () => {
     setShowMenu(!showMenu);

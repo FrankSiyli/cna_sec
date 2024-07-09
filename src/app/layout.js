@@ -12,6 +12,7 @@ const inter = Inter({
 
 export const metadata = {
   title: "siyli-endurance-coaching.com",
+  url: "siyli-endurance-coaching.com",
   description: "Triathlon coaching and more",
 };
 
