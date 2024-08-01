@@ -27,7 +27,7 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
           }  duration-100`}
         >
           <Image
-            className="absolute top-0 left-0 opacity-50 w-full h-auto"
+            className="absolute top-0 left-0 opacity-70 w-full h-auto"
             width={400}
             height={400}
             src="/triathlon_2.png"
@@ -49,7 +49,7 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
             </span>
           </div>
           <Image
-            className="absolute bottom-0 left-0 opacity-50 w-full h-auto"
+            className="absolute bottom-0 left-0 opacity-70 w-full h-auto"
             width={400}
             height={400}
             src="/triathlon_3.png"

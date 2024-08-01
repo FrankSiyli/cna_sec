@@ -31,12 +31,13 @@ const Page = () => {
             </p>
 
             <Image
-              className="mx-auto shadow rounded m-10 w-auto"
+              className="mx-auto shadow rounded m-10 w-auto mb-80"
               width={300}
               height={300}
               src="/bike.png"
               alt="bike"
             />
+          
           </div>
         </div>
       </div>

@@ -26,36 +26,39 @@ const Page = () => {
             </p>
           </div>
 
-          <Image
-           className="mx-auto shadow rounded m-10"
-           width={600}
-           height={1}
-            src="/theBrutal.png"
-            alt="brutal triathlon"
-          />
-          
-            
-            <div className="flex flex-col justify-center items-center my-10 text-center bg-appGrey/30 p-3">
-              <p>Ich bin lizensierter</p>
-              <Image
+          <div>
+            <Image
+              className="mx-auto shadow rounded mt-10"
+              width={600}
+              height={1}
+              src="/theBrutal.png"
+              alt="brutal triathlon"
+            />
+            <p className="text-sm text-appDark scale-75">
+              www.klickchickphotography.com
+            </p>
+          </div>
+
+          <div className="flex flex-col justify-center items-center my-10 text-center bg-appGrey/30 p-3">
+            <p>Ich bin lizensierter</p>
+            <Image
               className="m-2 rounded shadow"
               width={200}
               height={1}
               src="/dtu.png"
               alt="dtu"
             />
-              <p>und</p>
-              <Image
+            <p>und</p>
+            <Image
               className="m-2 rounded shadow"
               width={200}
               height={1}
               src="/trainingpeaks_logo.png"
               alt="trainingpeaks-logo"
             />
-
-              Trainer
-            </div>
-                    </div>
+            Trainer
+          </div>
+        </div>
 
         <div className="backdrop-blur-md backdropSafari rounded-xl mb-10">
           <div className="bg-appGrey/30 p-3">
@@ -79,22 +82,22 @@ const Page = () => {
           </div>
 
           <Image
-           className="mx-auto shadow rounded m-10"
-           width={400}
+            className="mx-auto shadow rounded m-10"
+            width={400}
             height={1}
             src="/deca.png"
             alt="deca uk"
           />
           <div className="bg-appGrey/30 p-3">
-
             <p>10x Langdistanz</p>
-          <p>
-            <span className="mx-1 text-appBlue">38km</span>Swim
-            <span className="mx-1 text-appBlue">1800km</span>Bike
-            <span className="mx-1 text-appBlue">422km</span>Run
-          </p></div>
+            <p>
+              <span className="mx-1 text-appBlue">38km</span>Swim
+              <span className="mx-1 text-appBlue">1800km</span>Bike
+              <span className="mx-1 text-appBlue">422km</span>Run
+            </p>
+          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 m-10 gap-2 mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 mt-10 gap-2 mx-auto">
             <Image
               className="rounded min-w-[200px] w-auto mx-auto"
               width={296}
@@ -117,6 +120,7 @@ const Page = () => {
               alt="deca uk"
             />
           </div>
+            <p className="text-sm text-appDark scale-75">www.strava.com</p>
         </div>
       </div>
     </div>

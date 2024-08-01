@@ -4,6 +4,7 @@ import Menu from "../Menu/Menu";
 import ButtonHamburgerMenu from "../buttons/ButtonHamburgerMenu";
 import { useRecoilState } from "recoil";
 import { showMenuState } from "@/app/recoil/atoms/showMenuState";
+import Link from "next/link";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useRecoilState(showMenuState);
@@ -34,8 +35,11 @@ const Header = () => {
 
         if (currentScrollY > lastScrollY && currentScrollY > 100) {
           setShowHeader(false);
-          setLastHideScrollY(currentScrollY); 
-        } else if (currentScrollY < lastScrollY && lastHideScrollY - currentScrollY > 100) {
+          setLastHideScrollY(currentScrollY);
+        } else if (
+          currentScrollY < lastScrollY &&
+          lastHideScrollY - currentScrollY > 100
+        ) {
           setShowHeader(true);
         }
 
@@ -58,12 +62,17 @@ const Header = () => {
   return (
     <>
       <div
-        className={`headerBackground fixed z-10 top-0 left-0 w-screen h-24 flex justify-center items-center text-center shadow-xl transition-transform duration-300 ${
+        className={`fixed-header  ${
           showHeader ? "transform translate-y-0" : "transform -translate-y-full"
         }`}
       >
-        <div className="text-sm md:text-xl absolute flex flex-col justify-center items-center">
-          <span className="border border-appGrey/50 text-appGrey mb-1 font-semibold flex bg-appBlue/90 rounded py-1 px-2">
+        {" "}
+        <div className="headerImage"></div>
+        <Link
+          href="/#"
+          className="text-sm absolute flex flex-col justify-center items-center"
+        >
+          <span className="border border-appGrey/50 text-appGrey mb-1 font-semibold flex bg-appBlue/80 rounded py-1 px-2">
             LIFE <p className=" text-appGrey font-light ml-1"> is good</p>
           </span>
 
@@ -71,8 +80,7 @@ const Header = () => {
             TRIATHLON{" "}
             <p className=" text-appGrey font-light ml-1"> makes it better</p>
           </span>
-        </div>
-
+        </Link>
         <ButtonHamburgerMenu
           handleClick={handleMenuClick}
           secondProp={showMenu}

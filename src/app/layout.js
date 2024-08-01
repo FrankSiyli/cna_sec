@@ -19,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html  lang="en">
-      <body className={`${inter.variable} font-sans bg-[url('/background.png')] bg-contain bg-fixed`}>
+      <body className={`${inter.variable} font-sans`}>
       
         <RecoilRootWrapper><Header />{children}</RecoilRootWrapper>
         <Footer/>
