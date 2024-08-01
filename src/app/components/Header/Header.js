@@ -70,15 +70,15 @@ const Header = () => {
         <div className="headerImage"></div>
         <Link
           href="/#"
-          className="text-sm absolute flex flex-col justify-center items-center"
+          className="absolute flex flex-col justify-center items-center text-appBlue"
         >
-          <span className="border border-appGrey/50 text-appGrey mb-1 font-semibold flex bg-appBlue/80 rounded py-1 px-2">
-            LIFE <p className=" text-appGrey font-light ml-1"> is good</p>
+          <span className="mb-1 font-semibold flex py-1 px-2 rounded bg-appGrey/40">
+            LIFE <p className="font-light ml-1"> is good</p>
           </span>
 
-          <span className="border border-appGrey/50 text-appGrey font-semibold flex bg-appBlue/90 rounded py-1 px-2">
+          <span className="font-semibold flex py-1 px-2 rounded bg-appGrey/30">
             TRIATHLON{" "}
-            <p className=" text-appGrey font-light ml-1"> makes it better</p>
+            <p className="font-light ml-1"> makes it better</p>
           </span>
         </Link>
         <ButtonHamburgerMenu
