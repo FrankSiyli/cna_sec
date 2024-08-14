@@ -20,7 +20,7 @@ const Page = () => {
               <Link
                 className="underline"
                 target="_blank"
-                href="https://siyli-app.vercel.app"
+                href="https://siyli-app.de"
               >
                 siyli-app.de
               </Link>
