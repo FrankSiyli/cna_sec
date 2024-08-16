@@ -2,7 +2,6 @@ import ArrowRightSvg from "@/app/components/buttons/svgCollection/ArrowRightSvg"
 import React, { forwardRef, useEffect, useState } from "react";
 import menuItemsArray from "./menuItemsArray/menuItemsArray";
 import Link from "next/link";
-import Image from "next/image";
 import { useRecoilState } from "recoil";
 import { showMenuState } from "@/app/recoil/atoms/showMenuState";
 
@@ -26,7 +25,7 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
             showMenu ? "" : "translate-x-80"
           }  duration-100`}
         >
-          <Image
+          <img
             className="absolute top-0 left-0 opacity-70 w-full h-auto"
             width={400}
             height={400}
@@ -48,7 +47,7 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
               ))}
             </span>
           </div>
-          <Image
+          <img
             className="absolute bottom-0 left-0 opacity-70 w-full h-auto"
             width={400}
             height={400}

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import ArrowLeftSvg from "../../components/buttons/svgCollection/ArrowLeftSvg";
@@ -30,7 +29,7 @@ const Page = () => {
               vorbei{" "}
             </p>
 
-            <Image
+            <img
               className="mx-auto shadow rounded m-10 w-auto mb-80"
               width={300}
               height={300}

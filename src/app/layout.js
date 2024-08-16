@@ -20,9 +20,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html  lang="en">
-<<<<<<< HEAD
-      <body className={`${inter.variable} font-sans`}>
-=======
        <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
@@ -31,7 +28,6 @@ export default function RootLayout({ children }) {
         <meta property="og:description" content={metadata.description} />
       </Head>
       <body className={`${inter.variable} font-sans bg-[url('/background.png')] bg-contain bg-fixed`}>
->>>>>>> f0756f9 (next config change)
       
         <RecoilRootWrapper><Header />{children}</RecoilRootWrapper>
         <Footer/>

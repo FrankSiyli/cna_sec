@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import CookieConsent from "./CookieConsent";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -68,7 +67,7 @@ export default function Home() {
           <p className="text-appBlue">Triathlon-coaching </p>
         </div>
         <div>
-          <Image
+          <img
             className="mx-auto shadow rounded m-5"
             width={600}
             height={1}
@@ -78,7 +77,7 @@ export default function Home() {
         </div>
         <div className="bg-appGrey/30 my-10 p-5">
           <p>All training sessions are in german and english</p>
-          <Image
+          <img
             className="mx-auto shadow rounded m-5 w-auto h-10"
             width={70}
             height={70}

@@ -2,7 +2,6 @@
 import React from "react";
 import ArrowLeftSvg from "../../components/buttons/svgCollection/ArrowLeftSvg";
 import Link from "next/link";
-import Image from "next/image";
 
 const Page = () => {
   return (
@@ -27,7 +26,7 @@ const Page = () => {
           </div>
 
           <div>
-            <Image
+            <img
               className="mx-auto shadow rounded mt-10"
               width={600}
               height={1}
@@ -41,7 +40,7 @@ const Page = () => {
 
           <div className="flex flex-col justify-center items-center my-10 text-center bg-appGrey/30 p-3">
             <p>Ich bin lizensierter</p>
-            <Image
+            <img
               className="m-2 rounded shadow"
               width={200}
               height={1}
@@ -49,7 +48,7 @@ const Page = () => {
               alt="dtu"
             />
             <p>und</p>
-            <Image
+            <img
               className="m-2 rounded shadow"
               width={200}
               height={1}
@@ -81,7 +80,7 @@ const Page = () => {
             </p>
           </div>
 
-          <Image
+          <img
             className="mx-auto shadow rounded m-10"
             width={400}
             height={1}
@@ -98,21 +97,21 @@ const Page = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 mt-10 gap-2 mx-auto">
-            <Image
+            <img
               className="rounded min-w-[200px] w-auto mx-auto"
               width={296}
               height={425}
               src="/decaSwim.png"
               alt="deca uk"
             />
-            <Image
+            <img
               className="rounded min-w-[200px] w-auto mx-auto"
               width={296}
               height={425}
               src="/decaBike.png"
               alt="deca uk"
             />
-            <Image
+            <img
               className="rounded min-w-[200px] w-auto mx-auto"
               width={296}
               height={425}
