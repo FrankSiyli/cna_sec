@@ -2,15 +2,20 @@
 import React from "react";
 import ArrowLeftSvg from "../../components/buttons/svgCollection/ArrowLeftSvg";
 import Link from "next/link";
+import Head from "next/head";
 
 const Page = () => {
   return (
-    <div className="flex min-h-screen w-full flex-col items-center">
-      <Link href="/">
-        <ArrowLeftSvg />
-      </Link>
-      <div className="mt-48 px-10 backdrop-blur-md backdropSafari rounded-xl mb-10">
-        <h2 className="mb-20 text-2xl">Datenschutz</h2>
+    <>
+      <Head>
+        <meta name="robots" content="noindex" />
+      </Head>
+      <div className="flex min-h-screen w-full flex-col items-center">
+        <Link href="/">
+          <ArrowLeftSvg />
+        </Link>
+        <div className="mt-48 px-10 backdrop-blur-md backdropSafari rounded-xl mb-10">
+          <h2 className="mb-20 text-2xl">Datenschutz</h2>
           <p>
             Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der
             EU-Datenschutzgrundverordnung (DSGVO), ist: Frank Siyli
@@ -38,7 +43,10 @@ const Page = () => {
           Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige
           Behörde. Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen
           Bereich) mit Anschrift finden Sie unter:{" "}
-          <Link className="text-xs" href="https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html">
+          <Link
+            className="text-xs"
+            href="https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html"
+          >
             www.bfdi.bund.de
           </Link>
           <p>Kontaktformular</p>
@@ -93,8 +101,9 @@ const Page = () => {
             Datenschutzerklärung wurde mithilfe der activeMind AG erstellt, den
             Experten für externe Datenschutzbeauftragte (Version #2020-09-30).
           </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -1,6 +1,5 @@
 import ArrowRightSvg from "@/app/components/buttons/svgCollection/ArrowRightSvg";
 import React, { forwardRef, useEffect, useState } from "react";
-import menuItemsArray from "./menuItemsArray/menuItemsArray";
 import Link from "next/link";
 import { useRecoilState } from "recoil";
 import { showMenuState } from "@/app/recoil/atoms/showMenuState";
@@ -9,7 +8,18 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => setLoaded(true), []);
   const [showMenu, setShowMenu] = useRecoilState(showMenuState);
-
+  
+  const menuItemsArray = [
+    {
+      title: "About",
+      link: "/about"
+    },
+    {
+      title: "Pläne",
+      link: "/staticPlans"
+    },
+  ];
+  
   return (
     <div
       className={`${
