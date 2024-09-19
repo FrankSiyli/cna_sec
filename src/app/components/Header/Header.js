@@ -62,12 +62,12 @@ const Header = () => {
   return (
     <>
       <div
-        className={`fixed-header  ${
+        className={`fixed-header ${
           showHeader ? "transform translate-y-0" : "transform -translate-y-full"
         }`}
       >
         {" "}
-        <div className="headerImage"></div>
+<img className="absolute top-2 left-2 h-16 sm:h-20 w-auto" src="/logoDark.png" height={600} width={600} />
         <Link
           href="/#"
           className="absolute flex flex-col justify-center items-center text-appBlue"
