@@ -8,18 +8,22 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => setLoaded(true), []);
   const [showMenu, setShowMenu] = useRecoilState(showMenuState);
-  
+
   const menuItemsArray = [
     {
       title: "About",
-      link: "/about"
+      link: "/about",
     },
     {
       title: "Pläne",
-      link: "/staticPlans"
+      link: "/staticPlans",
+    },
+    {
+      title: "M-52 Challenge",
+      link: "/m52",
     },
   ];
-  
+
   return (
     <div
       className={`${
