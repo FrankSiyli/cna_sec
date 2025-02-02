@@ -18,7 +18,7 @@ const Page = () => {
           <div className="backdrop-blur-md backdropSafari rounded-xl mb-10">
             <div className="bg-appGrey/30 p-3">
               <h2>
-                <span className="text-xl text-appBlue">Moin</span>
+                <span className=" text-appBlue">Moin</span>
               </h2>
 
               <p>Ich bin Frank aus Hamburg </p>

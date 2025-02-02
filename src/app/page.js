@@ -8,8 +8,8 @@ export default function Home() {
     <main className="flex flex-col items-center justify-between p-2">
       <CookieConsent />
       <div className="mt-40 mb-20 text-center">
-        <h2 className="text-xl mb-10 bg-appGrey/30 p-3">
-          <span className="text-appBlue ml-1 font-semibold">Trainingsplan</span>
+        <h2 className="mb-10 bg-appGrey/30 p-3">
+          <span className="text-appBlue ml-1">Trainingsplan</span>
           erstellung
         </h2>
         <div className="max-w-xl mx-5 backdrop-blur-md backdropSafari rounded-xl mb-10 flex flex-col text-left gap-3">

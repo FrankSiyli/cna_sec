@@ -16,11 +16,17 @@ const Page = () => {
         <div className="mt-40 mb-20 text-center">
           <div className="backdrop-blur-md backdropSafari mb-10">
             <div>
-              <h2 className="text-xl bg-appGrey/30 p-3">
+              <h2 className=" bg-appGrey/30 p-3 mb-5">
                 <span className="text-appBlue ml-1">Statische </span>
                 Trainingspläne
               </h2>
-              <button className="bg-appBlue  text-appGrey border border-appGrey/50 p-1.5 shadow-xl m-10 rounded hover:text-black transform transition-transform duration-500 ">
+             
+              <p>
+                Falls dir ein fertiger Plan ausreicht, schau gern in meiner App
+                vorbei{" "}
+              </p>
+
+              <button className="bg-appBlue/80  text-appGrey border border-appGrey/50 p-1.5 shadow-xl m-10 rounded hover:text-black/50 transform transition-transform duration-500 ">
                 <Link
                   className="underline"
                   target="_blank"
@@ -29,10 +35,6 @@ const Page = () => {
                   siyli-app.de
                 </Link>
               </button>
-              <p>
-                Falls dir ein fertiger Plan ausreicht, schau gern in meiner App
-                vorbei{" "}
-              </p>
 
               <img
                 className="mx-auto shadow rounded m-10 w-auto mb-80"

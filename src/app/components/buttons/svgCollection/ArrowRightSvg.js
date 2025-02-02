@@ -7,7 +7,7 @@ const ArrowRightSvg = () => {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="w-8 h-8 cursor-pointer hover:scale-105 transition-all"
+        className="w-6 h-6 cursor-pointer hover:scale-105 transition-all"
       >
         <path
           strokeLinecap="round"

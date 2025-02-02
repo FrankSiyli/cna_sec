@@ -4,7 +4,19 @@ import ArrowLeftSvg from "../../components/buttons/svgCollection/ArrowLeftSvg";
 import Head from "next/head";
 
 const Page = () => {
+
+
+  const months = [
+    "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"
+  ];
+
+  const images = {
+    Januar: ["m52_1.png", "m52_2.png", "m52_3.png"],
+    Februar: ["m52_4.png"],
+  };
   return (
+
+    
     <>
       <Head>
         <meta name="robots" content="noindex" />
@@ -16,12 +28,12 @@ const Page = () => {
         <div className="mt-40 mb-20 text-center">
           <div className="backdrop-blur-md backdropSafari mb-10">
             <div>
-              <h2 className="text-xl bg-appGrey/30 p-3 mb-10">M-52 Challenge</h2>
+              <h2 className=" bg-appGrey/30 p-3 mb-10">M-52 Challenge</h2>
 
               <div className="backdrop-blur-md backdropSafari rounded-xl mb-10 text-left">
                
                <div className="text-appBlue">
-                <p className="mb-5 text-lg">52 Marathondistanzen in 52 Wochen</p>
+                <p className="mb-5">52 Marathondistanzen in 52 Wochen</p>
                 <p>42.195km laufen = 1 Punkt</p>
                 <p>200km radfahren = 1 Punkt</p>
                 <p>10km schwimmen = 1 Punkt</p>
@@ -44,48 +56,25 @@ const Page = () => {
                 <p>Bei Einheiten länger als 24h keine Pause länger als 3h und maximal 6h Gesamtpausenzeit in 24h</p>
               </div>
 
-              <h2 className="text-xl bg-appGrey/30 p-3 mb-10"><span className="text-appBlue">Counter:</span> swim: <span className="text-appBlue">0</span> bike: <span className="text-appBlue">1</span> run: <span className="text-appBlue">2</span></h2>
+              <h2 className="text-xl bg-appGrey/30 p-3 mb-10"><span className="text-appBlue">Counter:</span> swim: <span className="text-appBlue">0</span> bike: <span className="text-appBlue">1</span> run: <span className="text-appBlue">3</span></h2>
 
-              <h2 className="text-xl bg-appGrey/30 p-3 mb-10">Januar 2025</h2>
-             
-              <div className="grid grid-cols-1 md:grid-cols-3 mt-10 gap-2 mx-auto">
-
-              <img
-                className="mx-auto shadow rounded m-5 w-80"
-                width={300}
-                height={300}
-                src="/challenge/m52_1.png"
-                alt="bike"
-              />
-              <img
-                className="mx-auto shadow rounded m-5 w-80"
-                width={300}
-                height={300}
-                src="/challenge/m52_2.png"
-                alt="bike"
-              />
-              <img
-                className="mx-auto shadow rounded m-5 w-80"
-                width={300}
-                height={300}
-                src="/challenge/m52_3.png"
-                alt="bike"
-              />
-              </div>
-
-              <h2 className="text-xl bg-appGrey/30 p-3 mb-10">Februar 2025</h2>
-              <h2 className="text-xl bg-appGrey/30 p-3 mb-10">März 2025</h2>
-              <h2 className="text-xl bg-appGrey/30 p-3 mb-10">April 2025</h2>
-              <h2 className="text-xl bg-appGrey/30 p-3 mb-10">Mai 2025</h2>
-              <h2 className="text-xl bg-appGrey/30 p-3 mb-10">Juni 2025</h2>
-              <h2 className="text-xl bg-appGrey/30 p-3 mb-10">Juli 2025</h2>
-              <h2 className="text-xl bg-appGrey/30 p-3 mb-10">August 2025</h2>
-              <h2 className="text-xl bg-appGrey/30 p-3 mb-10">September 2025</h2>
-              <h2 className="text-xl bg-appGrey/30 p-3 mb-10">Oktober 2025</h2>
-              <h2 className="text-xl bg-appGrey/30 p-3 mb-10">November 2025</h2>
-              <h2 className="text-xl bg-appGrey/30 p-3 mb-10">Dezember 2025</h2>
-
-
+              {months.map((month) => (
+          <div key={month} className="mb-10">
+            <h2 className=" bg-appGrey/30 p-3 mb-5">{month} 2025</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+              {images[month]?.map((img, i) => (
+                <img
+                  key={i}
+                  className="mx-auto shadow rounded w-80"
+                  width={300}
+                  height={300}
+                  src={`/challenge/${img}`}
+                  alt="challenge"
+                />
+              ))}
+            </div>
+          </div>
+        ))}
               
             </div>
           </div>
