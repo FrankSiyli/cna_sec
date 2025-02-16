@@ -13,7 +13,7 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
 
   const menuItemsArray = [
     {
-      title: "Pläne",
+      title: "Trainingspläne",
       link: "/staticPlans",
     },
     {
