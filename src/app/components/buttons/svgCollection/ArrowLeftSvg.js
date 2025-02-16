@@ -1,9 +1,6 @@
-
 const ArrowLeftSvg = () => {
-
   return (
-    <div
-      className="fixed left-2 top-28 rounded shadow text-appBlue z-10 bg-appGrey/20 hover:bg-appGrey cursor-pointer"    >
+    <div className="fixed left-2 top-28 rounded shadow-xl bg-appBlue/70 hover:bg-appBlue border border-appGrey/50 cursor-pointer z-10 text-appGrey">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

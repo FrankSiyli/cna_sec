@@ -2,89 +2,119 @@
 
 import Link from "next/link";
 import CookieConsent from "./CookieConsent";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between p-2">
       <CookieConsent />
       <div className="mt-40 mb-20 text-center">
-        <h2 className="mb-10 bg-appGrey/30 p-3">
-          <span className="text-appBlue ml-1">Trainingsplan</span>
-          erstellung
-        </h2>
-        <div className="max-w-xl mx-5 backdrop-blur-md backdropSafari rounded-xl mb-10 flex flex-col text-left gap-3">
-          <div className="flex">
-            <p>
-              <span className="text-appBlue mr-1">#</span>wöchentlicher
-              Trainingsplan auf der professionellen Plattform von{" "}
-              <Link
-                className="underline text-appBlue"
-                target="_blank"
-                href="https://www.trainingpeaks.com"
-              >
-                Trainingpeaks
-              </Link>
+        <div className="backdrop-blur-md backdropSafari rounded-xl mb-10">
+          <div className="bg-appGrey/30 w-screen p-3">
+            <h2>
+              <span className="text-xl">Moin</span>
+            </h2>
+
+            <p className="mt-5">
+              Ich bin Frank aus Hamburg und unterstütze seit 2017 Athletinnen
+              und Athleten dabei ihre Träume
             </p>
-            &nbsp;
-          </div>
-          <div className="flex">
-            <span className="text-appBlue mr-1">#</span> angepasst an dich und
-            <span className="text-appBlue ml-1">dein Leben </span>
-          </div>
-          <div className="flex">
-            {" "}
-            <span className="text-appBlue mr-1">#</span>unbegrenzte
-            Kontaktmöglichkeit{" "}
-          </div>
-          <div className="flex">
-            <span className="text-appBlue mr-1">#</span> auf Wunsch
-            <span className="text-appBlue ml-1">zyklusbasiertes Training </span>
-          </div>
-          <div className="flex">
+
             <p>
-              <span className="text-appBlue mr-1">#</span>Unterstützung bei{" "}
-              <span className="text-appBlue ml-1">
-                Zielsetzungen, Materialauswahl und Ernährung{" "}
-              </span>
+              von der ersten Sprintdistanz über die Langdistanz bis hin zu
+              Ultra-events zu verwirklichen
             </p>
-          </div>
-          <div className="flex">
-            {" "}
-            <span className="text-appBlue mr-1">#</span> monatlich kündbar{" "}
           </div>
 
-          <div className="flex">
-            <span className="text-appBlue mr-1">#</span>Schwimm-, Rad- und
-            Laufeinheiten in abwechslungsreichen Intensitäten und Umfängen{" "}
+          <div>
+            <Image
+              className="mx-auto shadow rounded mt-10"
+              width={600}
+              height={1}
+              src="/theBrutal.png"
+              alt="brutal triathlon"
+            />
+            <p className="text-sm text-appDark scale-75">
+              www.klickchickphotography.com
+            </p>
           </div>
-          <div className="flex">
-            <span className="text-appBlue mr-1">#</span>
-            inklusive Trainingpeaks Premium account{" "}
+
+          <div className="flex flex-col justify-center items-center my-10 text-center bg-appGrey/30 p-3">
+            <p>Ich bin lizensierter</p>
+            <Image
+              className="m-2 rounded shadow"
+              width={200}
+              height={1}
+              src="/dtu.png"
+              alt="dtu"
+            />
+            <p>und</p>
+            <Image
+              className="m-2 rounded shadow"
+              width={200}
+              height={1}
+              src="/trainingpeaks_logo.png"
+              alt="trainingpeaks-logo"
+            />
+            Trainer
           </div>
         </div>
-        <div className="bg-appGrey/30 rounded-xl mb-10 p-3">
-          <span className=" text-red-500">ausgebucht</span>
-          <p className="text-appBlue">Triathlon-coaching </p>
-        </div>
-        <div>
-          <img
-            className="mx-auto shadow rounded m-5"
-            width={600}
+
+        <div className="backdrop-blur-md backdropSafari rounded-xl mb-10">
+          <div className="bg-appGrey/30 p-3">
+            <p>Als Athlet fühle ich mich auf den Ultradistanzen zu Hause</p>
+            <p>
+              Diese Leidenschaft führte 2022 zu einem Finish beim
+              <Link
+                className="mx-1 underline text-appBlue"
+                href="https://www.youtube.com/watch?v=hXKsAClUzMI"
+                target="_blank"
+              >
+                DecaUK
+              </Link>
+            </p>
+          </div>
+
+          <Image
+            className="mx-auto shadow rounded m-10"
+            width={400}
             height={1}
-            src="/trainingpeaks.png"
-            alt="trainingpeaks"
+            src="/deca.png"
+            alt="deca uk"
           />
-        </div>
-        <div className="bg-appGrey/30 my-10 p-5">
-          <p>All training sessions are in german and english</p>
-          <img
-            className="mx-auto shadow rounded m-5 w-auto h-10"
-            width={70}
-            height={70}
-            src="/union.png"
-            alt="english"
-          />
-          <p>if you have any questions just let me know</p>
+          <div className="bg-appGrey/30 p-3">
+            <p>10x Langdistanz</p>
+            <p>
+              <span className="mx-1 text-appBlue">38km</span>Swim
+              <span className="mx-1 text-appBlue">1800km</span>Bike
+              <span className="mx-1 text-appBlue">422km</span>Run
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 mt-10 gap-2 mx-auto">
+            <Image
+              className="rounded min-w-[200px] w-auto mx-auto"
+              width={296}
+              height={425}
+              src="/decaSwim.png"
+              alt="deca uk"
+            />
+            <Image
+              className="rounded min-w-[200px] w-auto mx-auto"
+              width={296}
+              height={425}
+              src="/decaBike.png"
+              alt="deca uk"
+            />
+            <Image
+              className="rounded min-w-[200px] w-auto mx-auto"
+              width={296}
+              height={425}
+              src="/decaRun.png"
+              alt="deca uk"
+            />
+          </div>
+          <p className="text-sm text-appDark scale-75">www.strava.com</p>
         </div>
       </div>
     </main>

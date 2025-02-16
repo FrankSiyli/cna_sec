@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRecoilState } from "recoil";
 import { showMenuState } from "@/app/recoil/atoms/showMenuState";
 import ButtonHamburgerMenu from "../buttons/ButtonHamburgerMenu";
+import Image from "next/image";
 
 const Menu = forwardRef(({ handleMenuClick }, ref) => {
   const [loaded, setLoaded] = useState(false);
@@ -11,10 +12,6 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
   const [showMenu, setShowMenu] = useRecoilState(showMenuState);
 
   const menuItemsArray = [
-    {
-      title: "About",
-      link: "/about",
-    },
     {
       title: "Pläne",
       link: "/staticPlans",
@@ -39,11 +36,13 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
           className={`fixed top-0 right-1 bottom-0 w-48 p-5 bg-appGrey border-l-1 border-b-1 border-t-1 border-appBlue rounded shadow-2xl flex flex-col justify-center items-center z-20 transform transition-transform ${
             showMenu ? "" : "translate-x-80"
           }  duration-100`}
-        > <ButtonHamburgerMenu
-        handleClick={handleMenuClick}
-        secondProp={showMenu}
-      />
-          <img
+        >
+          {" "}
+          <ButtonHamburgerMenu
+            handleClick={handleMenuClick}
+            secondProp={showMenu}
+          />
+          <Image
             className="absolute top-0 left-0 opacity-70 w-full h-auto"
             width={400}
             height={400}
@@ -65,7 +64,7 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
               ))}
             </span>
           </div>
-          <img
+          <Image
             className="absolute bottom-0 left-0 opacity-70 w-full h-auto"
             width={400}
             height={400}

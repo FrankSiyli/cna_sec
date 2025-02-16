@@ -5,6 +5,7 @@ import ButtonHamburgerMenu from "../buttons/ButtonHamburgerMenu";
 import { useRecoilState } from "recoil";
 import { showMenuState } from "@/app/recoil/atoms/showMenuState";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useRecoilState(showMenuState);
@@ -67,25 +68,22 @@ const Header = () => {
         }`}
       >
         {" "}
-<Link href="/#">
-  <img
-    className="absolute top-2 left-2 h-16 sm:h-20 w-auto cursor-pointer"
-    src="/logoDark.png"
-    height={600}
-    width={600}
-    alt="Logo"
-  />
-</Link>
-        <div
-          className="absolute flex flex-col justify-center items-center text-appBlue"
-        >
+        <Link href="/#">
+          <Image
+            className="absolute top-2 left-2 h-16 sm:h-20 w-auto cursor-pointer"
+            src="/logoDark.png"
+            height={600}
+            width={600}
+            alt="Logo"
+          />
+        </Link>
+        <div className="absolute flex flex-col justify-center items-center text-appBlue">
           <span className="mb-1 font-semibold flex py-1 px-2 rounded bg-appGrey/40">
             LIFE <p className="font-light ml-1"> is good</p>
           </span>
 
           <span className="font-semibold flex py-1 px-2 rounded bg-appGrey/30">
-            TRIATHLON{" "}
-            <p className="font-light ml-1"> makes it better</p>
+            TRIATHLON <p className="font-light ml-1"> makes it better</p>
           </span>
         </div>
         <ButtonHamburgerMenu
