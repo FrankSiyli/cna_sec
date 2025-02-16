@@ -12,7 +12,7 @@ export default function Home() {
         <div className="backdrop-blur-md backdropSafari rounded-xl mb-10">
           <div className="bg-appGrey/30 w-screen p-3">
             <h2>
-              <span className="text-xl">Moin</span>
+              <span className="text-xl text-appBlue">Moin</span>
             </h2>
 
             <p className="mt-5">
@@ -49,13 +49,19 @@ export default function Home() {
               alt="dtu"
             />
             <p>und</p>
-            <Image
-              className="m-2 rounded shadow"
-              width={200}
-              height={1}
-              src="/trainingpeaks_logo.png"
-              alt="trainingpeaks-logo"
-            />
+            <Link
+              className="m-2 rounded bg-appGrey shadow hover:shadow-md"
+              target="_blank"
+              href="https://www.trainingpeaks.com"
+            >
+              <Image
+                className=""
+                width={200}
+                height={1}
+                src="/trainingpeaks_logo.png"
+                alt="trainingpeaks-logo"
+              />
+            </Link>
             Trainer
           </div>
         </div>

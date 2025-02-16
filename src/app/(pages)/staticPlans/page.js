@@ -36,18 +36,24 @@ const Page = () => {
                 </p>
               </div>
 
-              <div className="flex justify-center">
+              <div className="flex items-center justify-center">
                 <p>
                   <span className="text-appBlue mr-1">#</span>wöchentlicher
                   Trainingsplan auf
-                  <Link
-                    className="underline  ml-1"
-                    target="_blank"
-                    href="https://www.trainingpeaks.com"
-                  >
-                    Trainingpeaks
-                  </Link>
                 </p>
+                <Link
+                  className="rounded ml-1 shadow hover:shadow-md"
+                  target="_blank"
+                  href="https://www.trainingpeaks.com"
+                >
+                  <Image
+                    className=""
+                    width={150}
+                    height={1}
+                    src="/trainingpeaks_logo.png"
+                    alt="trainingpeaks-logo"
+                  />
+                </Link>
                 &nbsp;
               </div>
               <div className="flex justify-center">
@@ -102,19 +108,14 @@ const Page = () => {
               <p>if you have any questions just let me know</p>
             </div>
           </div>
-
           <div className="backdrop-blur-md backdropSafari mb-10">
             <div>
               <h2 className=" bg-appGrey/30 p-3 mb-5">
                 Allgemeine Trainingspläne findest du in meiner App:
               </h2>
-              <button className="ml-2 hover:text-black/50  ">
-                <Link
-                  className="underline underline-offset-2 text-appBlue"
-                  target="_blank"
-                  href="https://siyli-app.de"
-                >
-                  siyli-app.de
+              <button className="m-5  bg-appGrey p-2 rounded shadow hover:shadow-md  text-appBlue">
+                <Link className="" target="_blank" href="https://siyli-app.de">
+                  www.siyli-app.de
                 </Link>
               </button>
               <Image
