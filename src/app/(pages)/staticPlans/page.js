@@ -122,7 +122,7 @@ const Page = () => {
                 className="mx-auto shadow rounded m-5 w-auto"
                 width={300}
                 height={300}
-                src="/siyli_app.png"
+                src="/siyli_app_2.png"
                 alt="bike"
               />
             </div>
