@@ -42,13 +42,13 @@ const Page = () => {
                   Trainingsplan auf
                 </p>
                 <Link
-                  className="rounded ml-1 shadow hover:shadow-md"
+                  className="rounded ml-2 shadow hover:shadow-md"
                   target="_blank"
                   href="https://www.trainingpeaks.com"
                 >
                   <Image
-                    className=""
-                    width={150}
+                    className="bg-appGrey rounded"
+                    width={120}
                     height={1}
                     src="/trainingpeaks_logo.png"
                     alt="trainingpeaks-logo"
@@ -113,7 +113,7 @@ const Page = () => {
               <h2 className=" bg-appGrey/30 p-3 mb-5">
                 Allgemeine Trainingspläne findest du in meiner App:
               </h2>
-              <button className="m-5  bg-appGrey p-2 rounded shadow hover:shadow-md  text-appBlue">
+              <button className="m-5  bg-appBlue/70 hover:bg-appBlue p-2 rounded hover:shadow-xl shadow  text-appGrey">
                 <Link className="" target="_blank" href="https://siyli-app.de">
                   www.siyli-app.de
                 </Link>
