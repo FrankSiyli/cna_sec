@@ -23,7 +23,7 @@ const Page = () => {
   const images = {
     Januar: ["m52_1.png", "m52_2.png", "m52_3.png"],
     Februar: ["m52_4.png", "m52_5.png", "m52_6.png"],
-    März: ["m52_7.png", "m52_8.png"],
+    März: ["m52_7.png", "m52_8.png", "m52_9.png"],
   };
   return (
     <>
