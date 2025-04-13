@@ -3,6 +3,7 @@ import React from "react";
 import ArrowLeftSvg from "../../components/buttons/svgCollection/ArrowLeftSvg";
 import Head from "next/head";
 import Image from "next/image";
+import LinkSvg from "@/app/components/buttons/svgCollection/LinkSvg";
 
 const Page = () => {
   return (
@@ -114,16 +115,21 @@ const Page = () => {
                 Allgemeine Trainingspläne findest du in meiner App:
               </h2>
               <button className="m-5  bg-appBlue/70 hover:bg-appBlue p-2 rounded hover:shadow-xl shadow  text-appGrey">
-                <Link className="" target="_blank" href="https://siyli-app.de">
+                <Link
+                  className="flex gap-2"
+                  target="_blank"
+                  href="https://siyli-app.de"
+                >
                   www.siyli-app.de
+                  <LinkSvg />
                 </Link>
               </button>
               <Image
                 className="mx-auto shadow rounded m-5 w-auto"
                 width={300}
                 height={300}
-                src="/siyli_app_2.png"
-                alt="bike"
+                src="/app.png"
+                alt="app"
               />
             </div>
           </div>
