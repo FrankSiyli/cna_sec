@@ -24,7 +24,7 @@ const Page = () => {
     Januar: ["m52_1.png", "m52_2.png", "m52_3.png"],
     Februar: ["m52_4.png", "m52_5.png", "m52_6.png"],
     März: ["m52_7.png", "m52_8.png", "m52_9.png"],
-    April: ["m52_10.png", "m52_12.png"],
+    April: ["m52_10.png", "m52_12.png", "m52_13.png"],
   };
   return (
     <>
@@ -68,27 +68,18 @@ const Page = () => {
                   : 10km swim/200km bike/42.195km run = 3 Punkte
                 </p>
                 <p className="mb-5">Unter 24h = 1 Extrapunkt</p>
-                <p className="mb-5">Regeln:</p>
-                <p>
-                  Bei Einheiten unter 24h keine Pause länger als 30min und
-                  maximal 3h Gesamtpausenzeit in 24h
-                </p>
-                <p>
-                  Bei Einheiten länger als 24h keine Pause länger als 3h und
-                  maximal 6h Gesamtpausenzeit in 24h
-                </p>
               </div>
 
               <div className="bg-appGrey/30 p-3 mb-10">
                 <h2 className=" ">
                   <span className="text-xl">
-                    Counter: <span className="text-appBlue">12/52 </span>
+                    Counter: <span className="text-appBlue">13/52 </span>
                   </span>{" "}
                 </h2>
                 <p>
                   swim: <span className="text-appBlue">0</span> bike:{" "}
                   <span className="text-appBlue">1</span> run:{" "}
-                  <span className="text-appBlue">11</span>
+                  <span className="text-appBlue">12</span>
                 </p>
               </div>
 
