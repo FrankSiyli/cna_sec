@@ -68,7 +68,7 @@ export default function Home() {
 
         <div className="backdrop-blur-md backdropSafari rounded-xl mb-10">
           <div className="bg-appGrey/30 p-3">
-            <p>Als Athlet fühle ich mich auf den Ultradistanzen zu Hause</p>
+            <p>Als Athlet bin ich auf den Ultradistanzen zu Hause</p>
             <p>
               Diese Leidenschaft führte 2022 zu einem Finish beim
               <Link
