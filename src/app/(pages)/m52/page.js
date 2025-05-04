@@ -25,6 +25,7 @@ const Page = () => {
     Februar: ["m52_4.png", "m52_5.png", "m52_6.png"],
     März: ["m52_7.png", "m52_8.png", "m52_9.png"],
     April: ["m52_10.png", "m52_12.png", "m52_13.png"],
+    Mai: ["m52_14.png"],
   };
   return (
     <>
@@ -73,13 +74,13 @@ const Page = () => {
               <div className="bg-appGrey/30 p-3 mb-10">
                 <h2 className=" ">
                   <span className="text-xl">
-                    Counter: <span className="text-appBlue">13/52 </span>
+                    Counter: <span className="text-appBlue">14/52 </span>
                   </span>{" "}
                 </h2>
                 <p>
                   swim: <span className="text-appBlue">0</span> bike:{" "}
                   <span className="text-appBlue">1</span> run:{" "}
-                  <span className="text-appBlue">12</span>
+                  <span className="text-appBlue">13</span>
                 </p>
               </div>
 
