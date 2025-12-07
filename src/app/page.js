@@ -28,7 +28,7 @@ export default function Home() {
               src="/theBrutal.png"
               alt="brutal triathlon"
             />
-            <p className="text-xs mt-2">Photographer: Kathi Harman</p>
+            <p className="text-xs mt-2"> Photographer: Kathi Harman</p>
           </div>
         </section>
 
