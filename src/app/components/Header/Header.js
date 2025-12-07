@@ -72,8 +72,8 @@ const Header = () => {
           <Image
             className="absolute top-2 left-2 h-14 md:h-28  w-auto cursor-pointer"
             src="/logoDark.png"
-            height={600}
-            width={600}
+            height={400}
+            width={400}
             alt="Logo"
           />
         </Link>

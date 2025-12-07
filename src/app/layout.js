@@ -19,8 +19,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html  lang="en">
-       <Head>
+    <html lang="en">
+      <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <link
@@ -47,10 +47,14 @@ export default function RootLayout({ children }) {
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
       </Head>
-      <body className={`${inter.variable} font-sans bg-[url('/background.png')] bg-contain bg-fixed`}>
-      
-        <RecoilRootWrapper><Header />{children}</RecoilRootWrapper>
-        <Footer/>
+      <body
+        className={`${inter.variable} font-sans bg-[url('/background_2.png')] bg-contain bg-fixed`}
+      >
+        <RecoilRootWrapper>
+          <Header />
+          {children}
+        </RecoilRootWrapper>
+        <Footer />
       </body>
       <GoogleAnalytics gaId="G-5RYG7LTMTJ" />
     </html>
