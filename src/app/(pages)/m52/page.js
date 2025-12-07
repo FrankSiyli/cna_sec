@@ -5,6 +5,8 @@ import Head from "next/head";
 import Image from "next/image";
 
 const Page = () => {
+  {
+    /*
   const months = [
     "Januar",
     "Februar",
@@ -21,30 +23,33 @@ const Page = () => {
   ];
 
   const images = {
-    Januar: ["m52_1.png", "m52_2.png", "m52_3.png"],
-    Februar: ["m52_4.png", "m52_5.png", "m52_6.png"],
-    März: ["m52_7.png", "m52_8.png", "m52_9.png"],
-    April: ["m52_10.png", "m52_12.png", "m52_13.png"],
-    Mai: ["m52_14.png"],
+    Januar: ["m52_1.png"],
+    Februar: [],
+    März: [],
+    April: [],
+    Mai: [],
   };
+*/
+  }
+
   return (
     <>
       <Head>
         <meta name="robots" content="noindex" />
       </Head>
-      <div className="min-h-screen flex flex-col items-center justify-between p-2">
+      <div className="min-h-screen flex flex-col items-center p-2">
         <Link href="/">
           <ArrowLeftSvg />
         </Link>
         <div className="mt-40 mb-20 text-center">
           <div className="backdrop-blur-md backdropSafari mb-10">
             <div>
-              <h2 className=" bg-appGrey/30 p-3 mb-10 w-screen text-xl">
+              <h2 className="p-3 mb-10 w-screen text-2xl">
                 M-52 Challenge
               </h2>
 
               <div className="backdrop-blur-md backdropSafari rounded-xl mb-10 text-center">
-                <div className="text-appBlue">
+                <div className="text-xl">
                   <p className="mb-5">52 Marathondistanzen in 52 Wochen</p>
                   <p>42.195km laufen = 1 Punkt</p>
                   <p>200km radfahren = 1 Punkt</p>
@@ -71,6 +76,7 @@ const Page = () => {
                 <p className="mb-5">Unter 24h = 1 Extrapunkt</p>
               </div>
 
+              {/*
               <div className="bg-appGrey/30 p-3 mb-10">
                 <h2 className=" ">
                   <span className="text-xl">
@@ -83,7 +89,9 @@ const Page = () => {
                   <span className="text-appBlue">13</span>
                 </p>
               </div>
+  */}
 
+              {/*
               {months.map((month) => (
                 <div key={month} className="mb-10">
                   <h2 className=" bg-appGrey/30 p-3 mb-5">{month} 2025</h2>
@@ -107,6 +115,7 @@ const Page = () => {
                   )}
                 </div>
               ))}
+              */}
             </div>
           </div>
         </div>

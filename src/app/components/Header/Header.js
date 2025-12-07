@@ -70,7 +70,7 @@ const Header = () => {
         {" "}
         <Link href="/#">
           <Image
-            className="absolute top-2 left-2 h-16 sm:h-20 w-auto cursor-pointer"
+            className="absolute top-2 left-2 h-14 md:h-28  w-auto cursor-pointer"
             src="/logoDark.png"
             height={600}
             width={600}
@@ -78,11 +78,11 @@ const Header = () => {
           />
         </Link>
         <div className="absolute flex flex-col justify-center items-center text-appBlue">
-          <span className="mb-1 font-semibold flex py-1 px-2 rounded bg-appGrey/40">
+          <span className="mb-1 font-semibold flex py-1 px-2">
             LIFE <p className="font-light ml-1"> is good</p>
           </span>
 
-          <span className="font-semibold flex py-1 px-2 rounded bg-appGrey/30">
+          <span className="font-semibold flex py-1 px-2">
             TRIATHLON <p className="font-light ml-1"> makes it better</p>
           </span>
         </div>

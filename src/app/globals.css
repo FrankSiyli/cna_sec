@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --appBlue: #4974a9;
+  --appBlue: #172537;
   --appGrey: #f1f1f1;
   --appDark: #2f3236;
 }
@@ -15,6 +15,10 @@
   ::-webkit-scrollbar {
     display: none;
   }
+}
+
+html {
+  font-size: 18px; 
 }
 
 body:before {
@@ -40,7 +44,7 @@ body:before {
   left: 0;
   width: 100%;
   height: 6rem;
-  background-color: rgba(241, 241, 241, 0.8);
+  background-color: rgba(241, 241, 241, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;

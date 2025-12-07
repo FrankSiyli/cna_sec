@@ -8,12 +8,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)'],
-        mono: ['var(--font-roboto-mono)'],
+        sans: ["var(--font-inter)"],
+        mono: ["var(--font-roboto-mono)"],
       },
-      
+
       colors: {
-        appBlue: "#013f8b",
+        appBlue: "#172537",
         appGrey: "#f1f1f1",
         appDark: "#2f3236",
       },

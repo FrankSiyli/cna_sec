@@ -1,3 +1,6 @@
+{/*
+
+
 import Link from "next/link";
 import React from "react";
 import ArrowLeftSvg from "../../components/buttons/svgCollection/ArrowLeftSvg";
@@ -17,9 +20,7 @@ const Page = () => {
         </Link>
         <div className="mt-5 mb-20 text-center w-screen">
           <div className="mt-40 mb-20 text-center">
-            <h2 className="mb-10 bg-appGrey/30 p-3 text-xl">
-              Trainingsplanerstellung
-            </h2>
+            <h2 className="mb-10 p-3 text-xl">Trainingsplanerstellung</h2>
 
             <div className="flex flex-col gap-2">
               <div className="flex justify-center">
@@ -78,7 +79,7 @@ const Page = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-5 p-5 my-10  bg-appGrey/30 rounded">
+            <div className="flex flex-col gap-5 p-5 my-10 ">
               <p>Bei Interesse oder Fragen:</p>
               <a
                 className="text-center underline text-appBlue"
@@ -109,21 +110,20 @@ const Page = () => {
               <p>if you have any questions just let me know</p>
             </div>
           </div>
-          <div className="backdrop-blur-md backdropSafari mb-10">
+          <div className="mb-10">
             <div>
-              <h2 className=" bg-appGrey/30 p-3 mb-5">
+              <h2 className="p-3 mb-5 flex justify-center flex-col md:flex-row gap-2">
                 Allgemeine Trainingspläne findest du in meiner App:
-              </h2>
-              <button className="m-5  bg-appBlue/70 hover:bg-appBlue p-2 rounded hover:shadow-xl shadow  text-appGrey">
                 <Link
-                  className="flex gap-2"
+                  className="ml-2 text-appBlue flex justify-center gap-2"
                   target="_blank"
                   href="https://siyli-app.de"
                 >
                   www.siyli-app.de
                   <LinkSvg />
                 </Link>
-              </button>
+              </h2>
+
               <Image
                 className="mx-auto shadow rounded m-5 w-auto"
                 width={300}
@@ -140,3 +140,5 @@ const Page = () => {
 };
 
 export default Page;
+
+*/}

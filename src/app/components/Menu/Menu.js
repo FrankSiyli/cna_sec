@@ -13,14 +13,16 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
 
   const menuItemsArray = [
     {
-      title: "Trainingspläne",
-      link: "/staticPlans",
-    },
-    {
       title: "M-52 Challenge",
       link: "/m52",
     },
+    {
+      title: "siyli-app.de",
+      link: "https://www.siyli-app.de",
+      newTab: true,
+    },
   ];
+  
 
   return (
     <div
@@ -33,7 +35,7 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
       {loaded ? (
         <div
           ref={ref}
-          className={`fixed top-0 right-1 bottom-0 w-48 p-5 bg-appGrey border-l-1 border-b-1 border-t-1 border-appBlue rounded shadow-2xl flex flex-col justify-center items-center z-20 transform transition-transform ${
+          className={`fixed top-0 right-1 bottom-0 w-40 p-5 bg-appGrey border-l-1 border-b-1 border-t-1 border-appBlue rounded shadow-2xl flex flex-col justify-center items-center z-20 transform transition-transform ${
             showMenu ? "" : "translate-x-80"
           }  duration-100`}
         >
@@ -49,18 +51,21 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
             src="/triathlon_2.png"
             alt="triathlon"
           />
-          <div className="relative w-48 z-10">
+          <div className="relative w-40 z-10">
             <span className="flex flex-col w-full">
               {menuItemsArray.map((menuItem, menuItemIndex) => (
-                <Link
-                  onClick={() => setShowMenu(false)}
-                  href={menuItem.link}
-                  key={menuItemIndex}
-                  className="flex justify-between items-center rounded m-1 bg-appBlue/80  text-appGrey border border-appGrey/50 cursor-pointer shadow-xl hover:text-black/50 transform transition-transform duration-300"
-                >
-                  <p className="m-1">{menuItem.title}</p>
-                  <ArrowRightSvg />
-                </Link>
+              <Link
+              onClick={() => setShowMenu(false)}
+              href={menuItem.link}
+              key={menuItemIndex}
+              target={menuItem.newTab ? "_blank" : "_self"}
+              rel={menuItem.newTab ? "noopener noreferrer" : undefined}
+              className="flex flex-row justify-between items-center mt-1 rounded bg-appBlue/80 text-appGrey border border-appGrey/50 cursor-pointer shadow-xl hover:text-black/50 transform transition-transform duration-300"
+            >
+              <p className="m-1">{menuItem.title}</p>
+              <ArrowRightSvg />
+            </Link>
+            
               ))}
             </span>
           </div>
