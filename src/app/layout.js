@@ -3,7 +3,6 @@ import "./globals.css";
 import RecoilRootWrapper from "./RecoilRootWrapper";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
 import Head from "next/head";
 
 const inter = Inter({
@@ -50,10 +49,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} font-sans bg-[url('/background_2.png')] bg-contain bg-fixed`}
       >
-        <RecoilRootWrapper>
-          <Header />
-          {children}
-        </RecoilRootWrapper>
+        <RecoilRootWrapper>{children}</RecoilRootWrapper>
         <Footer />
       </body>
       <GoogleAnalytics gaId="G-5RYG7LTMTJ" />

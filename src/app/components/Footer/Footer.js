@@ -3,19 +3,14 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="w-full p-5 flex flex-col text-center">
-      <h2 className="text-center">Kontakt:</h2>
-      <a
-        className="text-center underline mb-10"
-        href="mailto:info@siyli-endurance-coaching.com"
-      >
-        info@siyli-endurance-coaching.com
-      </a>
-      <div className="flex justify-center gap-5 underline text-sm">
-        <Link href="/impressum">Impressum</Link>
-        <Link href="/datenschutz">Datenschutz</Link>
+    <footer className="border-t border-slate-200 bg-slate-50">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-4 px-4 py-8 text-center text-slate-700">
+        <div className="flex flex-wrap justify-center gap-6 text-sm text-slate-600">
+          <Link href="/impressum">Impressum</Link>
+          <Link href="/datenschutz">Datenschutz</Link>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

@@ -1,103 +1,59 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
-import Menu from "../Menu/Menu";
-import ButtonHamburgerMenu from "../buttons/ButtonHamburgerMenu";
-import { useRecoilState } from "recoil";
-import { showMenuState } from "@/app/recoil/atoms/showMenuState";
+
 import Link from "next/link";
 import Image from "next/image";
 
-const Header = () => {
-  const [showMenu, setShowMenu] = useRecoilState(showMenuState);
-  const [showHeader, setShowHeader] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-  const [lastHideScrollY, setLastHideScrollY] = useState(0);
-  const menuRef = useRef(null);
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setShowMenu(false);
-      }
-    };
-
-    if (typeof window !== "undefined") {
-      document.addEventListener("mousedown", handleClickOutside);
-      return () => {
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
-    }
-  }, [setShowMenu]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (typeof window !== "undefined") {
-        const currentScrollY = window.scrollY;
-
-        if (currentScrollY > lastScrollY && currentScrollY > 100) {
-          setShowHeader(false);
-          setLastHideScrollY(currentScrollY);
-        } else if (
-          currentScrollY < lastScrollY &&
-          lastHideScrollY - currentScrollY > 100
-        ) {
-          setShowHeader(true);
-        }
-
-        setLastScrollY(currentScrollY);
-      }
-    };
-
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }
-  }, [lastScrollY, lastHideScrollY]);
-
-  const handleMenuClick = () => {
-    setShowMenu(!showMenu);
-  };
-
+export default function Header() {
   return (
-    <>
-      <div
-        className={`fixed-header ${
-          showHeader ? "transform translate-y-0" : "transform -translate-y-full"
-        }`}
-      >
-        {" "}
-        <Link href="/#">
+    <header className="fixed inset-x-0 top-0 z-30 border-b border-slate-200/70 bg-white/90 backdrop-blur-sm">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
+        <Link href="/#" className="flex items-center gap-3">
           <Image
-            className="absolute top-2 left-2 h-14 md:h-28  w-auto cursor-pointer"
             src="/logoDark.png"
-            height={400}
-            width={400}
+            width={48}
+            height={48}
             alt="Logo"
+            className="h-12 w-12 object-contain"
           />
+          <div className="hidden md:block">
+            <p className="text-sm font-semibold text-appBlue">
+              Siyli Endurance
+            </p>
+            <p className="text-xs text-slate-500">Triathlon Coaching</p>
+          </div>
         </Link>
-        <div className="absolute flex flex-col justify-center items-center text-appBlue">
-          <span className="mb-1 font-semibold flex py-1 px-2">
-            LIFE <p className="font-light ml-1"> is good</p>
-          </span>
 
-          <span className="font-semibold flex py-1 px-2">
-            TRIATHLON <p className="font-light ml-1"> makes it better</p>
-          </span>
-        </div>
-        <ButtonHamburgerMenu
-          handleClick={handleMenuClick}
-          secondProp={showMenu}
-        />
+        <nav className="hidden items-center gap-6 md:flex">
+          <Link
+            href="/#services"
+            className="text-sm font-medium text-slate-700 hover:text-appBlue"
+          >
+            Leistungen
+          </Link>
+          <Link
+            href="/#about"
+            className="text-sm font-medium text-slate-700 hover:text-appBlue"
+          >
+            Über mich
+          </Link>
+          <Link
+            href="/#pricing"
+            className="text-sm font-medium text-slate-700 hover:text-appBlue"
+          >
+            Preise
+          </Link>
+          <Link href="/#contact" className="text-sm font-medium text-appBlue">
+            Kontakt
+          </Link>
+        </nav>
+
+        <Link
+          href="mailto:info@siyli-endurance-coaching.com"
+          className="rounded-full border border-appBlue bg-appBlue px-4 py-2 text-sm font-semibold text-white transition hover:bg-appDark"
+        >
+          Anfrage
+        </Link>
       </div>
-      <Menu
-        ref={menuRef}
-        showMenu={showMenu}
-        handleMenuClick={handleMenuClick}
-      />
-    </>
+    </header>
   );
-};
-
-export default Header;
+}
